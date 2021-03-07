@@ -17,5 +17,6 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: books/jocelin_cronica/main.tex
+          working_directory: books/jocelin_cronica/
+          root_file: main.tex
           latexmk_use_lualatex: true
