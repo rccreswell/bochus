@@ -65,6 +65,9 @@
 \pagestyle{plain}
 
 
+% Counter for english footnotes
+\newcounter{engnote}
+
 % Footnotes with their own symbols
 \makeatletter
 \def\@xfootnote[#1]{%
@@ -73,9 +76,6 @@
 \makeatother
 
 %%%% Note: Footnotes in the english columns should be entered in the latin column using engnotetext, otherwise they may appear on the wrong page.
-
-% Counter for english footnotes
-\newcounter{engnote}
 
 % Commands for english footnotes
 \newcommand{\engnotenum}{\textsuperscript{\arabic{engnote}\stepcounter{engnote}}}
@@ -391,7 +391,7 @@ Then came the almoner of the lord king and told the lord abbot that many rumours
 \switchcolumn*
 
 \begin{otherlanguage}{latin}
-Ego vero tunc temporis novicius, data opportunitate, magistrum meum super his conveni, qui me docebat ordinem et cujus custodi\ae{} deputatus fui, scilicet, magistrum Sampsonem, postea abbatem. ``Quid est,'' inquam, ``quod audio? Utquid taces qui talia vides et audis, tu qui claustralis es, nec obedientias cupis, et Deum times magis quam hominem?'' At ille respondens, ait: ``Fili mi, puer noviter combustus timet ignem; ita est de me et pluribus aliis. Hugo prior noviter depositus est de prioratu suo, et in exilium missus; Dionisius et H.\ et R.\ de Hingham de exilio nuper domum redierunt. Ego similiter incarceratus\engnotetext{Arnold (\textit{Mem}., I., xliv., note \oldstylenums{3}; \oldstylenums{212}), gives reasons for supposing that this alludes to a second imprisonment of Samson, distinct from that which he suffered on his return from Rome (see text, p.\ \oldstylenums{77}). The passage would appear to refer to a recent event, which the imprisonment after his Roman journey was not.} fui, et postea apud Acram missus, quia locuti sumus pro communi bono ecclesi\ae{} nostr\ae{} contra voluntatem abbatis. H\ae{}c est hora tenebrarum; h\ae{}c est hora qua adulatores dominantur et eis creditur: confortata est potentia eorum, nec possumus ad eam. Dissimulanda sunt ista pro tempore: videat Dominus et judicet.''\engnotetext{In all probability this means Castle Acre, where was a famous Cluniac priory, founded by William de Warenne, as a cell to St.\ Pancras, Lewes. Acre, however, might mean either Castle Acre of West Acre, at both of which places were priories.}\engnotetext{Ps.\ cxxxiii., \oldstylenums{6} (Vulgate).}\engnotetext{Ex.\ v., \oldstylenums{21}.}
+Ego vero tunc temporis novicius, data opportunitate, magistrum meum super his conveni, qui me docebat ordinem et cujus custodi\ae{} deputatus fui, scilicet, magistrum Sampsonem, postea abbatem. ``Quid est,'' inquam, ``quod audio? Utquid taces qui talia vides et audis, tu qui claustralis es, nec obedientias cupis, et Deum times magis quam hominem?'' At ille respondens, ait: ``Fili mi, puer noviter combustus timet ignem; ita est de me et pluribus aliis. Hugo prior noviter depositus est de prioratu suo, et in exilium missus; Dionisius et H.\ et R.\ de Hingham de exilio nuper domum redierunt. Ego similiter incarceratus\engnotetext{Arnold (\textit{Mem}., I., xliv., note \oldstylenums{3}; \oldstylenums{212}), gives reasons for supposing that this alludes to a second imprisonment of Samson, distinct from that which he suffered on his return from Rome (see text, p.\ \oldstylenums{77}). The passage would appear to refer to a recent event, which the imprisonment after his Roman journey was not.} fui, et postea apud Acram missus, quia locuti sumus pro communi bono ecclesi\ae{} nostr\ae{} contra voluntatem abbatis. H\ae{}c est hora tenebrarum; h\ae{}c est hora qua adulatores dominantur et eis creditur: confortata est potentia eorum, nec possumus ad eam. Dissimulanda sunt ista pro tempore: videat Dominus et judicet.''\engnotetext{In all probability this means Castle Acre, where was a famous Cluniac priory, founded by William de Warenne, as a cell to St.\ Pancras, Lewes. Acre, however, might mean either Castle Acre of West Acre, at both of which places were priories.}\engnotetext{Ps.\ cxxxviii., \oldstylenums{6} (Vulgate).}\engnotetext{Ex.\ v., \oldstylenums{21}.}
 \end{otherlanguage}
 
 \switchcolumn
@@ -542,12 +542,12 @@ But William the sacristan mistrusted his colleague Samson, as did many others, b
 \switchcolumn*
 
 \begin{otherlanguage}{latin}
-Accepto itaque consilio qualiter irruerent in Samsonem inimici vel adversarii ejus, convenerunt Robertum de Cokefeld et socium ejus, qui custodes erant abbati\ae{}, et induxerunt eos ad hoc, quod illi prohibuerant ex parte regis, ne aliquis aliquod opus vel aliquod \ae{}dificium faceret, quamdiu abbatia vacaret; sed potius denarii ex oblationibus colligerentur et conservarentur ad faciendam solutionem alicujus debiti. Et sic illusus est Samson\engnotetext{Jud.\ xvi., \oldstylenums{17}.}, et recessit ab eo fortitudo ejus; nec de c\ae{}tero aliquid operari potuit, sicut voluit. Potuerunt quidem adversarii ejus rem differre, sed non auferre; quia resumptis viribus suis, et subversis duobus columnis,\engnotetext{Jud.\ xvi., \oldstylenums{29}.} id est, remotis duobus custodibus abbati\ae{} quibus aliorum malitia innitebatur, dedit ei Dominus, processu temporis, potestatem perficiendi votum suum ut pr\ae{}dictam turrim \ae{}dificaret, et pro desiderio suo consummaret. Et factum est ac si ei divinitus diceretur: ``Euge, serve bone et fidelis,\engnotetext{Matt.\ xxv., \oldstylenums{21}.} quia super pauca fuisti fidelis, super multa, \&c.''
+Accepto itaque consilio qualiter irruerent in Samsonem inimici vel adversarii ejus, convenerunt Robertum de Cokefeld et socium ejus, qui custodes erant abbati\ae{}, et induxerunt eos ad hoc, quod illi prohibuerant ex parte regis, ne aliquis aliquod opus vel aliquod \ae{}dificium faceret, quamdiu abbatia vacaret; sed potius denarii ex oblationibus colligerentur et conservarentur ad faciendam solutionem alicujus debiti. Et sic illusus est Samson\engnotetext{Jud.\ xvi., \oldstylenums{17}; xvi., \oldstylenums{19}.}, et recessit ab eo fortitudo ejus; nec de c\ae{}tero aliquid operari potuit, sicut voluit. Potuerunt quidem adversarii ejus rem differre, sed non auferre; quia resumptis viribus suis, et subversis duobus columnis,\engnotetext{Jud.\ xvi., \oldstylenums{29}.} id est, remotis duobus custodibus abbati\ae{} quibus aliorum malitia innitebatur, dedit ei Dominus, processu temporis, potestatem perficiendi votum suum ut pr\ae{}dictam turrim \ae{}dificaret, et pro desiderio suo consummaret. Et factum est ac si ei divinitus diceretur: ``Euge, serve bone et fidelis,\engnotetext{Matt.\ xxv., \oldstylenums{21}.} quia super pauca fuisti fidelis, super multa, \&c.''
 \end{otherlanguage}
 
 \switchcolumn
 
-Therefore, having taken counsel together how they might attack Samson, his enemies and adversaries went to Robert de Cokefield and to his colleague, who had the wardship of the abbey, and persuaded them to forbid in the name of the king that any one should do any work or build anything while the abbacy was vacant, but rather should the money from he offerings be collected and saved for the payment of some part of the debt. Thus was Samson mocked,\engnotenum{} and his strength went from him, and he could not from that time do any work as he desired. But though his enemies could delay his work, they could not finally interrupt it. For he regained his strength and overthrew the two middle pillars,\engnotenum{} that is, he removed the two wardens in whom the malice of the others trusted. And afterwards in course of time, the Lord gave him power to perform his vow that he would build the said tower, and to finish it according to his wish. And so it came to pass as though a voice from Heaven had said to him, ``Well done, thou good and faithful servant;\engnotenum{} thou hast been faithful over a few things; I will make thee ruler over many things.''
+Therefore, having taken counsel together how they might attack Samson, his enemies and adversaries went to Robert de Cokefield and to his colleague, who had the wardship of the abbey, and persuaded them to forbid in the name of the king that any one should do any work or build anything while the abbacy was vacant, but rather should the money from he offerings be collected and saved for the payment of some part of the debt. Thus was Samson mocked, and his strength went from him,\engnotenum{} and he could not from that time do any work as he desired. But though his enemies could delay his work, they could not finally interrupt it. For he regained his strength and overthrew the two middle pillars,\engnotenum{} that is, he removed the two wardens in whom the malice of the others trusted. And afterwards in course of time, the Lord gave him power to perform his vow that he would build the said tower, and to finish it according to his wish. And so it came to pass as though a voice from Heaven had said to him, ``Well done, thou good and faithful servant;\engnotenum{} thou hast been faithful over a few things; I will make thee ruler over many things.''
 
 \switchcolumn*
 
@@ -637,7 +637,7 @@ Then I saw Samson the subsacristan sitting by, for the time of this little counc
 
 \begin{otherlanguage}{latin}
 \blockhead{How the author spoke his mind too hastily.}{3}{-0.45cm}
-Quo audiente, solebam respondere ita judicantibus, dicens, quod, si debemus expectare ad eligendum abbatem donec inveniamus aliquem qui sine omni reprehensione et macula fuerit, nunquam talem inveniemus, quia nemo sine crimine vivit, et nichil omni parte beatum.\footnote[\textdagger]{Hor.\ Od.\ i.\ \oldstylenums{16}.} Quodam tempore non potui cohibere spiritum meum quin pr\ae{}cipitarem sententiam meam, putans me loqui fidis auribus, et dixi quendam indignum abbatia, qui me multum dilexerat prius, et multa bona contulerat; et alium dignum duxi, et nominavi aliquem, quem minus dilige bam. Loquebar secundum conscientiam meam, considerans potius communem utilitatem ecclesi\ae{} quam meam promotionem; et verum dixi; quod sequentia probaverunt. Et ecce unus ex filiis Belial dictum meum revelavit benefactori meo et amico; ob quam causam, usque ad hodiernum diem nunquam postea nec prece nec pretio potui recuperare gratiam ejus ad plenum. Quod dixi, dixi;\\
+Quo audiente, solebam respondere ita judicantibus, dicens, quod, si debemus expectare ad eligendum abbatem donec inveniamus aliquem qui sine omni reprehensione et macula fuerit, nunquam talem inveniemus, quia nemo sine crimine vivit, et nichil omni parte beatum.\footnote[\textdagger]{Hor.\ Od.\ ii.\ \oldstylenums{16}.} Quodam tempore non potui cohibere spiritum meum quin pr\ae{}cipitarem sententiam meam, putans me loqui fidis auribus, et dixi quendam indignum abbatia, qui me multum dilexerat prius, et multa bona contulerat; et alium dignum duxi, et nominavi aliquem, quem minus dilige bam. Loquebar secundum conscientiam meam, considerans potius communem utilitatem ecclesi\ae{} quam meam promotionem; et verum dixi; quod sequentia probaverunt. Et ecce unus ex filiis Belial dictum meum revelavit benefactori meo et amico; ob quam causam, usque ad hodiernum diem nunquam postea nec prece nec pretio potui recuperare gratiam ejus ad plenum. Quod dixi, dixi;\\
 \vspace{-0.75cm}
 \begin{verse}
 \footnotesize
@@ -653,7 +653,7 @@ And when I heard these things, I was wont to answer to those who so judged, and 
 \switchcolumn*
 
 \begin{otherlanguage}{latin}
-Unum restat; quod caveam mihi de c\ae{}tero, et, si tamdiu vixero ut videam abbatiam vacare, videbo quid, cui, et quando loquar de tali materia, ne vel Deum offendam mentiendo, vel hominem importune loquendo. Ad consilium meum tum erit, si duravero, ut aliquem eligamus non multum bonum monachum, non multum sapientem clericum, nec nimis idiotam, nec nimis dissolutum; ne, si nimis sapiat, de se et de proprio sensu nimis confidat, et alios vilipendat; vel si nimis brutescat, in opprobrium aliis fiat. Scio quis dixerit: ``medio tutissimus ibis;''\footnote[\textdagger]{Ov.\ Met.\ ii.\ \oldstylenums{137}.} et illud, ``medium tenuere beati.'' Vel forte, sanius consilium erit omnino tacere, ut dicam in corde meo: ``Qui potest capere, capiat.''\engnotetext{Matt.\ xiv., \oldstylenums{12}.}
+Unum restat; quod caveam mihi de c\ae{}tero, et, si tamdiu vixero ut videam abbatiam vacare, videbo quid, cui, et quando loquar de tali materia, ne vel Deum offendam mentiendo, vel hominem importune loquendo. Ad consilium meum tum erit, si duravero, ut aliquem eligamus non multum bonum monachum, non multum sapientem clericum, nec nimis idiotam, nec nimis dissolutum; ne, si nimis sapiat, de se et de proprio sensu nimis confidat, et alios vilipendat; vel si nimis brutescat, in opprobrium aliis fiat. Scio quis dixerit: ``medio tutissimus ibis;''\footnote[\textdagger]{Ov.\ Met.\ ii.\ \oldstylenums{137}.} et illud, ``medium tenuere beati.'' Vel forte, sanius consilium erit omnino tacere, ut dicam in corde meo: ``Qui potest capere, capiat.''\engnotetext{Matt.\ xix., \oldstylenums{12}.}
 \end{otherlanguage}
 
 \switchcolumn
@@ -960,7 +960,7 @@ Et interrogavit priorem si assentiret, et hoc vellet; qui respondit se hoc velle
 
 \switchcolumn
 
-Then he asked the prior if he assented to the choice and wished it, and the prior answered that he did will it, and that Samson was worthy of much greater honour. Therefore he was elected, and fell at the king's feet and embraced them. Then he arose quickly and hastened to the altar, with his head erect and without changing his expression, chanting the ``Miserere mei, Deus''\engnotetext{Ps.\ \oldstylenums{1}, Vulgate.}\engnotenum{} with the brothers.
+Then he asked the prior if he assented to the choice and wished it, and the prior answered that he did will it, and that Samson was worthy of much greater honour. Therefore he was elected, and fell at the king's feet and embraced them. Then he arose quickly and hastened to the altar, with his head erect and without changing his expression, chanting the ``Miserere mei, Deus''\engnotetext{Ps.\ \oldstylenums{50}, Vulgate.}\engnotenum{} with the brothers.
 
 \switchcolumn*
 
@@ -1500,28 +1500,522 @@ Strangulat inclusus dolor et cor \ae{}stuat intus.''\footnote[\textdagger]{Ovid.
 
 Once when it was told him that certain of those in the monastery murmured on account of some act of his, he said to me, as I was near him, ``God, God, it is most expedient that I should be mindful of that dream which was dreamed concerning me before I became abbot, to the effect that I should raven as a wolf. Of a truth, I fear this above all earthly things, that my house may do something which may make it lawful for me to raven. But so it is, that when they say or do aught against my will, I call to mind that dream, and though I raven in spirit, groaning and gnashing my teeth in secret, I put force on myself that I may raven neither in word nor in deed. And hidden grief chokes me, and my heart burns within me.''
 
+\switchcolumn*
 
+\begin{otherlanguage}{latin}
+Cum autem esset colericus naturaliter, et facile accenderetur ad iram, iram tamen ratione dignitatis cum magna lucta animi refr\ae{}nabat s\ae{}pius. De qua etiam re aliquando se jactitabat dicens: ``Hoc et illud vidi, hoc et illud audivi, et tamen patienter sustinui.''
+\end{otherlanguage}
 
+\switchcolumn
 
+But though he was naturally choleric and easily moved to wrath, yet from respect for his office he generally restrained his anger, albeit with much grief of mind. Of this also he often spoke, saying, ``I have seen this and that, I have heard this and that, and yet have I borne it patiently.''
 
+\switchcolumn*
 
+\begin{otherlanguage}{latin}
+\blockhead{How the abott forbade secret accusations, and how he ordered the restoration of all private seals.}{4}{-0.65cm}
+Dixit abbas aliquando, sedens in capitulo, qu\ae{}dam verba quibus videbatur efficaciter venari favorem conventus. ``Nolo,'' inquit, ``ut aliquis veniat ad me ad accusandum alium, nisi palam idem dicere voluerit; quod si aliquis aliter fecerit, nomen accusantis palam manifestabo. Volo etiam ut quilibet claustralis liberum habeat accessum ad me, ut mecum loquatur de necessitate sua quando voluerit.'' Illud autem dixit quia magnates nostri, tempore H.\ abbatis, volentes nichil agi in monasterio nisi per eos, decreverunt nullum monachum claustralem debere loqui cum abbate, nisi prius ostenderet capellano abbatis quid et de qua re vellet loqui cum abbate.
 
+\end{otherlanguage}
 
+\switchcolumn
 
+Once as he sat in the chapter, the abbot spoke certain words whereby he seemed to court the favour of the monastery with success. ``I will not,'' he said, ``that any come to me to accuse other, unless he will declare the same openly. But if any desire to act otherwise, I will publicly announce the name of the accuser. And I will also that every monk shall have free access to me, that he may talk with me of his needs when he will.'' Now this he said because the chief men of our house in the days of abbot Hugh, wishing nothing to be done in the monastery save through them, decreed that no cloistered monk should speak with the abbot, unless he had first shown to the abbot's chaplain that which he desired to say to the abbot and the reason.
 
+\switchcolumn*
 
+\begin{otherlanguage}{latin}
+Quodam die jussit in capitulo, ut quicumque  sigillum proprium haberet, ei redderet; et ita factum est, et inventa sunt triginta tria sigilla. Rationem hujus pr\ae{}cepti ipse ostendit, prohibens ne aliquis officialis appruntaret aliquod debitum ultra xx.\ solidos, sine assensu prioris et conventus, sicut solebat fieri. Priori vero et sacrist\ae{} reddidit sigilla sua, et c\ae{}tera retinuit.
+\end{otherlanguage}
 
+\switchcolumn
 
+One day he commanded in the chapter that all who had seals of their own should restore them to him, and so it was done; and thirty and three seals were found. He himself clearly declared the reason for this command, and forbade any official to contract any debt above the sum of twenty shillings without the consent of the prior and monastery, as had been wont to be done in the past. Then he restored the prior and sacristan their seals and retained the others. 
 
+\switchcolumn*
 
+\begin{otherlanguage}{latin}
+\blockhead{Concerning further regulations which the abbot made.}{4}{-0.45cm}
+Alia die, jussit sibi dari omnes claves cistarum et almariorum et hanepariorum, prohibens ne de cetero aliquis haberet cistam nec aliquid obseratum, nisi per licentiam, nec alias aliquid possideret, nisi quod regula permitteret. Cuilibet tamen nostrum generaliter dedit licentiam habendi denarios usque ad duos solidos, si forte nobis caritative darentur; ita tamen ut in pauperes parentes vel in pios usus expenderentur. 
 
+\end{otherlanguage}
 
+\switchcolumn
 
+At another time he ordered that all the keys of the chests, cupboards, and hampers should be given up to him, and forbade anyone henceforth to have any chest or anything locked up, save by permission, or to possess anything of any description except such things as the rule allowed. However, he gave general permission to all of us to have money to the value of two shillings, if perchance this should be given to us in charity. The leave was still conditional on the money being expended for the benefit of poor relations or in pious uses.
 
+\switchcolumn*
 
+\begin{otherlanguage}{latin}
+Alia vice, dixit abbas se velle conservare antiquas consuetudines nostras de hospitibus suscipiendis; scilicet, quando abbas est domi, ipse recipiet omnes hospites cujuslibet conditionis, pr\ae{}ter viros religiosos, et pr\ae{}ter presbyteros s\ae{}cularis habitus, et pr\ae{}ter eorum homines, qui per eos se advocaverunt ad portam curi\ae{}; si vero abbas non fuerit domi, omnes hospites cujuslibet conditionis recipientur a celerario usque ad tredecim equos. Si vero laicus vel clericus venerit cum pluribus equis quam tredecim, recipientur a servientibus abbatis, vel intra curiam vel extra, ad expensas abbatis. Omnes viri religiosi, etiam episcopi, si ipsi forte fuerint monachi, pertinent ad celerarium et ad expensas conventus, nisi abbas voluerit eum honorare, et ad expensas suas in sua aula recipere.
+\end{otherlanguage}
 
+\switchcolumn
 
+On another occasion the abbot said that he wished to maintain our ancient custom in the matter of the reception of guests, so that when the abbot was at home he should receive all guests of whatever condition, except religious men, and except priests of secular habit, and except their men, who should come to the doors of the court by instruction of their masters. If, however, the abbot should not be at home, all guests of whatever condition should be received by the cellarer, up to the number of thirteen horses. But if a layman or clerk should come with more than thirteen horses, they should be received by the servants of the abbot, either within or without the court, at the expense of the abbot. All religious men, even bishops, if by chance they were monks, were to be the care of the cellarer and entertained at the expense of the monastery, unless the abbot were desirous of showing them honour and of receiving them in his hall at his own expense.
 
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{Concerning the appearance and private character of the abbot.}{4}{-0.45cm}
+Abbas Samson mediocris erat statur\ae{}, fere omnino calvus, vultum habens nec rotundum nec oblongum, naso eminente, labiis grossis, oculis cristallinis et penetrantis intuitus, auribus clarissimi auditus, superciliis in altum crescentibus et s\ae{}pe tonsis; ex parvo frigore cito raucus; die electionis su\ae{} quadraginta et septem annos \ae{}tatis habens, et in monachatu decem et septem annos;\footnote[\textdagger]{This agrees sufficiently well with the statement of the unknown author of the MS., Harl.\ \oldstylenums{447} (not John of Taxter, with whom Mr.\ Rokewode confounds him in his note on this passage), that Samson took the habit in \oldstylenums{1166}. If so, he was not a monk at the time of his mission to Rome during the schism of Octavian; infra, p.\ 252. This point has been discussed in the Introduction.}\engnotetext{The \emph{Ann.\ St.\ Ed}.\ (\emph{Mem}.\ II., \oldstylenums{5}) bear this out, as under \oldstylenums{1166} there is an entry, ``Abbot Samson was made a monk.'' (Cp.\ \emph{Mem}.\ I., xliv.)} paucos canos habens in rufa barba, et paucissimos inter capillos nigros, et aliquantulum crispos; sed infra xiiii$^\text{or}$ annos post electionem suam totus albus efficitur sicut nix;
+
+\end{otherlanguage}
+
+\switchcolumn
+
+Abbot Samson was below the average height, almost bald; his face was neither round nor oblong; his nose was prominent and his lips thick; his eyes were clear and his glance penetrating; his hearing was excellent; his eyebrows arched, and frequently shaved; and a little cold soon made him hoarse. On the day of his election he was forty-seven, and had been a monk for seventeen years.\engnotenum{} In his ruddy beard there were a few grey hairs, and still fewer in his black and curling hair. But in the course of the first fourteen years after his election all his hair became white as snow.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+homo supersobrius, nunquam desidiosus, multum valens, et volens equitare vel pedes ire, donec senectus pr\ae{}valuit, qu\ae{} talem voluntatem temperavit; qui, audito rumore de capta cruce et perditione Jerusalem,\engnotetext{Jerusalem was taken by Saladin on October \oldstylenums{2}nd, \oldstylenums{1187}.} femoralibus cilicinis c\oe{}pit uti, et cilicio loco staminis, et carnibus et carneis abstinere; carnes tamen voluit sibi anteferri sedens ad mensam, ad augmentum scilicet elemosin\ae{}. Lac dulce et mel et consimilia dulcia libentius quam c\ae{}teros cibos comedebat.
+\end{otherlanguage}
+
+\switchcolumn
+
+He was an exceedingly temperate man; he possessed great energy and a strong constitution, and was fond both of riding and walking, until old age prevailed upon him and moderated his ardour in these respects. When he heard the news of the capture of the cross and the fall of Jerusalem,\engnotenum{} he began to wear under garments made of horse hair, and a horse-hair shirt, and gave up the use of flesh and meat. None the less, he willed that flesh should be placed before him as he sat at table, that the alms might be increased. He ate sweet milk, honey, and similar sweet things, far more readily than any other food.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Mendaces et ebriosos et verbosos odio habuit; quia virtus sese diligit, et aspernatur contrarium. Murmuratores cibi et potus, et pr\ae{}cipue monachos murmuratores condemnans, tenorem antiquum conservans quem olim habuit dum claustralis fuit; hoc autem virtutis in se habuit quod nunquam ferculum coram eo positum voluit mutare. Quod cum ego novicius vellem probare si hoc esset verum, forte servivi in refectorio, et cogitavi penes me ut ponerem coram eo ferculum quod omnibus aliis displiceret in disco nigerrimo et fracto. Quod cum ipse vidisset, tanquam non videns erat; facta autem mora, p\oe{}nituit me hoc fecisse, et statim, arrepto disco, ferculum et discum mutavi in melius et asportavi; ille vero emendationem talem moleste tulit, iratus et turbatus.
+\end{otherlanguage}
+
+\switchcolumn
+
+He hated liars, drunkards, and talkative persons; for virtue ever loves itself and spurns that which is contrary to it. He blamed those who grumbled about their meat and drink, and especially monks who so grumbled, and personally kept to the same manners which he had observed when he was a cloistered monk. Moreover, he had this virtue in himself that he never desired to change the dish which was placed before him. When I was a novice, I wished to prove whether this was really true, and as I happened to serve in the refectory, I thought to place before him food which would have offended any other man, in a very dirty and broken dish. But when he saw this, he was as it were blind to it. Then, as there was some delay, I repented of what I had done, and straightway seized the dish, changed the food and dish for better, and carried it to him. He, however, was angry at the change, and disturbed.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Homo erat eloquens, Gallice et Latine, magis ratione dicendorum quam ornatui verborum innitens. Scripturam Anglice scriptam legere novit elegantissime, et Anglice sermocinari solebat populo, sed secundum linguam Norfolchi\ae{}, ubi natus et nutritus erat, unde et pulpitum jussit fieri in ecclesia et ad utilitatem audientium et ad decorem ecclesi\ae{}. 
+\end{otherlanguage}
+
+\switchcolumn
+
+He was an eloquent man, speaking both French and Latin, but rather careful of the good sense of that which he had to say than of the style of his words. He could read books written in English very well, and was wont to preach to the people in English, but in the dialect of Norfolk where he was born and bred. It was for this reason that he ordered a pulpit to be placed in the church, for the sake of those who heard him and for purposes of ornament.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Videbatur quoque abbas activam vitam magis diligere quam contemplativam, qui bonos obedientiales magis commendavit quam bonos claustrales; et raro aliquem propter solam scientiam literarum approbavit, nisi haberet scientiam rerum s\ae{}cularium; et cum audiret forte aliquem pr\ae{}latum cedere oneri pastorali et fieri anachoritam, in hoc eum non laudavit. Homines nimis benignos laudare noluit, dicens: ``Qui omnibus placere nititur, nulli placere debet.''
+\end{otherlanguage}
+
+\switchcolumn
+
+The abbot further appeared to prefer the active to the contemplative life, and praised good officials more than good monks. He rarely commended anyone solely on account of his knowledge of letters, unless the man happened to have knowledge of secular affairs, and if he chanced to hear of any prelate who had given up his pastoral work and become a hermit, he did not praise him for this. He would not praise men who were too kindly, saying, ``He who strives to please all men, deserves to please none.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{How abbot Samson dealt with flatterers.}{3}{-0.55cm}
+Primo ergo anno suscept\ae{} abbati\ae{} omnes adulatores quasi odio habuit, et maxime monachos; sed in processu temporis videbatur eos quasi libentius audire et magis familiares habere. Unde contigit quod, cum quidam frater noster, hac arte peritus, curvasset genua ante eum, et sub obtentu consilii dandi auribus ejus adulationis oleum infudisset, subrisi ego stans a longe; eo vero recedente, vocatus et interrogatus quare riserim, respondi, mundum plenum esse adulatoribus.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+Now in the first year of his abbacy he seemed to hate all flatterers, and especially those who were monks. But in course of time he appeared to listen to them with some willingness, and to treat them more graciously. Once a certain one of our brothers, who was skilled in this art, had bent his knees before him, and under pretence of giving him counsel, had poured the oil of flattery into his ears, while I stood at a distance and smiled. Then when the brother had gone, the abbot called me and asked me why I had been smiling, and I answered that the world was full of flatterers.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Et abbas; ``Fili mi, diu est quod adulatores novi, et ideo non possum adulatores non audire. Multa sunt simulanda et dissimulanda, ad pacem conventus conservandam. Audiam eos loqui, sed non decipient me, si possum, sicut pr\ae{}decessorem meum, qui consilio eorum ita inconsulte credidit, quod diu ante obitum suum nichil habuit quod manducaret vel ipse vel familia sua, nisi a creditoribus mutuo acceptum; nec erat quod distribui potuit pauperibus die sepultur\ae{} ejus, nisi quinquaginta solidos, qui recepti erant a Ricardo firmario de Palegrava, hac occasione quod eadem die intravit firmam de Palegrava; quos denarios idem Ricardus alia vice reddidit bailivis regis, integram firmam exigentibus ad opus regis.'' His dictis confortatus fui.
+\end{otherlanguage}
+
+\switchcolumn
+
+And the abbot said, ``My son, I have been flattered for a long while, and therefore I cannot attend to flattery. There must be much pretence and much concealment that the peace of the monastery may be preserved. I will hear them speak, but they will not deceive me, if I can prevent it, as they deceived my predecessor, who gave such unconsidered attention to them that for a long while before his death he had nothing wherewith to feed himself or his household, save that which he borrowed from creditors. And on the day of his burial there was nothing which could be distributed among the poor, save fifty shillings which were received from Richard the tenant of Palgrave, because on the same day he entered on the tenancy of Palgrave; and this money the same Richard afterwards paid again to the officials of the king, who exacted the full rent for the royal use.'' And with these words I was reassured.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{How abbot Samson managed his household.}{3}{-0.55cm}
+Ille vero studuit disciplinatam domum habere, et famili\ae{} magnitudinem sed necessariam, providens sibi quod firma ebdomad\ae{}, qu\ae{} predecessori suo non sufficiebat ad expensam v.\ dierum, ei suffecit octo diebus, vel novem, vel decem, si esset ad maneria sua sine magno adventu hospitum. Singulis vero ebdomadis, computationem expens\ae{} su\ae{} domus audiebat, non per vicarium, sed in propria persona, quod antecessor ejus nunquam solebat facere.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+He laboured to secure a well regulated house, and a household large, but not larger than was right, and he took care that the weekly allowance which in the time of his predecessor had not been enough for five days, should last him for eight days, or nine, or ten, if he were on his manors and there were no great coming of guests. Every week, moreover, he audited the expenses of his house, not through an agent, but in person, a thing which his predecessor had never been accustomed to do.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Septem annis primis quatuor fercula\footnote[\textdagger]{``Sumpsit'' desiderari videtur.} in domo sua, postea nisia\footnote[\ddag]{$=$ \emph{non nisi}.} tria, pr\ae{}ter xenia et pr\ae{}ter venationem de parcis suis, vel pisces de vivariis suis. Et si forte aliquem retinuit ad tempus in domo sua prece alicujus potentis vel alicujus familiaris, vel nuncios, vel cithar\ae{}dos, vel aliquem hujusmodi, nacta opportunitate transfretandi vel longe eundi, a talibus superfluis se prudenter exoneravit.
+\end{otherlanguage}
+
+\switchcolumn
+
+For his first seven years he had four dishes in his house, afterwards only three, if one excludes presents, and game from his parks and fish from his ponds. And if he happened to keep anyone for a while in his house at the request of some great man or of one of his friends, or messengers, or minstrels, or any such person, he used to take any opportunity of crossing the sea or going a long journey, and so prudently freed himself from so great expense.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{How the abbot treated those monks with whom he had been intimate before he became abbot.}{4}{-0.65cm}
+Monachos vero, quos socios abbas habuit ante abbatiam susceptam magis dilectos et magis familiares, raro promovit ad obedientias occasione pristin\ae{} familiaritatis, nisi essent idonei; unde quidam ex nostris, qui ei erant propitii ad eligendum eum abbatem, dixerunt eum minus quam deceret diligere eos, qui eum antequam fuerat abbas dilexerant, et eos plus ab eo amari, qui eum et aperte et occulte depravaverunt, et eum hominem iracundum, non socialem, paltenerium et baratorem de Norfolch, etiam in audientia multorum, publice nominaverunt. Verum, sicut ille pristinis amicis suis nihil amoris vel honoris indiscrete exhibuit post susceptionem abbati\ae{} sic et pluribus aliis pro meritis suis nichil rancoris vel odii exhibuit, bonum aliquando reddens pro malo, et benefaciens persequentibus eum.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+Those monks whom the abbot, before he acquired the abbacy, had treated as his most cherished and intimate friends, he seldom raised to official positions on the score of his former intimacy with them, unless they were fit persons. Therefore some of our number, who had favoured his election as abbot, said that he showed them less favour than was their due, who had loved him before he was abbot, and that those rather were cherished by him who had slandered him both openly and secretly, and in the hearing of many had publicly declared him to be a hot-tempered man, one who was unsociable, conceited, and a Norfolk cheat. But, just as after he received the abbacy he made no injudicious exhibition of affection or of a desire to honour his former friends, so also he did not show towards the others any of that rancour or hatred which they deserved, returning good for evil on many occasions, and doing good to those who persecuted him.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Habuit etiam in consuetudine quiddam quod nunquam vidi hominem habere, scilicet quod multos affectuose dilexit, quibus nunquam vel raro vultum amoris exhibuit; hoc quod vulgus clamat, dicens, ``Ubi amor ibi oculus.'' Et aliud mirum fuit, quod damnum suum in temporalibus a servientibus suis scienter sustinuit, et se sustinere confessus est: sed, sicut credo, hoc fuit in causa, ut congruum tempus expectaret quo rem consultius emendaret, vel ut majus damnum dissimulando evitaret.
+\end{otherlanguage}
+
+\switchcolumn
+
+He had also a characteristic which I have never seen in any other man, namely, that he had a strong affection for many to whom he never or seldom showed a loving face, which the common saying declares to be usual, when it says, ``Where love is, there the glance follows.'' And there was another noteworthy thing, that he wittingly suffered loss from his servants in temporal matters, and allowed that he suffered it; but, as I believe, the reason for this was that he waited for a fit season when the matter might be conveniently remedied, or that by concealing his knowledge he might avoid greater loss.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{How the abbot treated his relations.}{3}{-0.55cm}
+Parentes suos mediocriter dilexit, nec minus vero tenere sicut alii solent; quia nullum infra tertium gradum habuit, vel habere simulavit. Sed audivi eum dicentem quod habuit parentes nobiles et generosos, quos nunquam imperpetuum ut parentes cognosceret; quia, ut aiebat, plus essent ei oneri quam honori, si hoc scirent; sed eos voluit consanguineos habere qui eum consanguineum habuerunt quando fuit pauper claustralis.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+For his relations he displayed moderate affection, but yet no less tender than that which others are wont to show, since he had no relatives within the third degree, or pretended that he had not. I have, however, heard him assert that he had relations who were noble and distinguished, but that he would never at any time recognise them as relations. For, as he said, they would be rather a burden than a source of advantage to him if they knew of their relationship. On the other hand, he wished to have as kin those who had claimed kinship with him when he was a poor cloistered monk.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Quosdam eorum, (eos secundum quod sibi utiles et idoneos \ae{}stimavit) diversis officiis in domo sua, quosdam villis custodiendis, deputavit. Quos autem infideles probavit, a se elongavit, sine spe redeundi.
+\end{otherlanguage}
+
+\switchcolumn
+
+Some of his relations, in cases where he thought them useful and capable men, he appointed to various offices in his house, and others he entrusted with the wardenship of manors. But any whom he proved to be unfaithful he drove far from him, without hope of return.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Quendam hominem medi\ae{} manus,\footnote[\textdagger]{Of lowly station.} qui patrimonium ejus fideliter servaverat, et ei juveni devote servierat, pro caro consanguineo habuit, et filio ejus clerico primam ecclesiam in abbatia sibi commissa vacantem dedit, et c\ae{}teros filios ejus omnes promovit. 
+\end{otherlanguage}
+
+\switchcolumn
+
+He held as his dear kinsman a certain man of low birth, who had managed his inheritance faithfully and served him devotedly in his boyhood. To this man's son, who was a clerk, he gave the first church which fell vacant after his accession to the abbacy, and he also promoted all the man's other sons.
+
+\clearpage 
+
+\switchcolumn*
+
+\setcounter{engnote}{60}
+
+\begin{otherlanguage}{latin}
+\blockhead{How the abbot was mindful of those who had shown kindness to him in the past, and how he treated those who had been harsh.}{5}{-0.15cm}
+Capellanum quendam, qui eum sustinuerat in scholis Parisius qu\ae{}stu aqu\ae{} benedict\ae{},\engnotetext{It was common practice to devote the money derived from the sale of holy water to the support of poor clerks. The synod of Exeter (\oldstylenums{1287}) definitely provided that such profits should be so spent. (\emph{Mem}.\ I., \oldstylenums{247}, note \emph{b}.)} quando pauper fuerat, mandari fecit, et ei ecclesiasticum beneficium quo sustentari possit, affectu vicario, contulit.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+There was a certain chaplain who had maintained him in the schools of Paris by the sale of holy water,\engnotenum{} when he was poor. This man the abbot caused to be summoned to him, and conferred on him an ecclesiastical benefice, with the position of vicar, whereby he might be supported.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Cuidam servienti pr\ae{}decessoris sui victum et vestitum concessit omnibus diebus vit\ae{} su\ae{}, qui imposuerat ei compedes ad pr\ae{}ceptum domini sui, quando fuit positus in carcere.
+\end{otherlanguage}
+
+\switchcolumn
+
+He granted to a certain servant of his predecessor food and clothing for all the days of his life, this man being he who had placed fetters on him at the command of his lord when he was imprisoned.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Filio Eli\ae{},\engnotetext{As to grants of land to Elias, by abbot Hugh, see Rokewode (p.\ \oldstylenums{122}). The total amounted to one hundred and forty acres, of which sixty were in Elmswell.} pincern\ae{} Hugonis abbatis, facienti ei homagium de terra patris sui, dixit in plena curia: ``Distuli jam capere homagium tuum vij.\ annis de terra quam H.\ abbas dedit patri tuo, quia illud donum erat in detrimentum aul\ae{} de Elmeswell: modo victus sum, memor beneficii quod pater tuus mihi fecit quando in vinculis eram, quia misit mihi portionem de ipso vino quod dominus suus biberat, mandando ut confortarer in Deo.''
+\end{otherlanguage}
+
+\switchcolumn
+
+When FitzElias,\engnotenum{} the cup-bearer of abbot Hugh, came to do him homage for his father's land, the abbot said to him in open court, ``I have delayed now for seven years to receive your homage for the land which abbot Hugh gave to your father, since that gift was to the detriment of the manor of Elmswell. Now I give way, since I am mindful of the good which your father did to me when I was in bonds. For he sent to me some of the very wine which his lord drank, with a message that I should be of good courage in God.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Magistro Waltero, filio magistri Willelmi de Dice,\engnotetext{This is the compiler of the passage which appears at the end of Jocelin's \emph{Chronicle} (see note to p.\ \oldstylenums{153}).} petenti caritative vicariam ecclesi\ae{} de Cheventona, respondit: ``Pater tuus magister scholarum erat; et cum pauper clericus eram, concessit mihi introitum schol\ae{} su\ae{} sine pacto et caritative, et usum discendi; et ego, causa Dei, concedo tibi quod postulas.''
+\end{otherlanguage}
+
+\switchcolumn
+
+When master William, son of master William of Diss,\engnotenum{} asked of his grace for the vicarage of the church of Chevington, he answered, ``Your father was master of the schools, and when I was a poor clerk he allowed me to enter the school without terms and of his grace, and to have the opportunity of learning. And I, for the sake of God, grant you that which you ask.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Duos etiam milites de Risebi, Willelmum et Normannum, cum judicati essent forte in misericordia ejus, ita allocutus est coram omnibus; ``Cum essem monachus claustralis missus Dunelmiam pro negotiis ecclesi\ae{} nostr\ae{}, et illinc in redeundo per Risebi, vespere obscuro interceptus, petissem hospitium a domino Normanno, omnino repulsam sustinui; domum vero domini Willelmi adiens et hospitium postulans, ab eo honorifice susceptus sum: et ideo xx.\ solidos, scilicet misericordiam, sine misericordia, integram recipiam a Normanno; Willelmo autem gratias ago, et debitam miserationem xx.\ solidorum gratanter remitto.''
+\end{otherlanguage}
+
+\switchcolumn
+
+Two knights also from Risby, William and Norman, were by chance judged to be at his mercy, and he thus addressed them in the presence of all: ``When I was a cloistered monk, I was sent to Durham on the business of our church. And as I was returning thence by way of Risby, I was overtaken by a dark night, and sought entertainment from the lord Norman, but suffered an absolute denial. Then I went to the house of lord William and prayed for lodging, and was honourably received by him. For this cause I will take twenty shillings, the full penalty, without pity, from Norman; but I give thanks to William, and gladly remit the due penalty of twenty shillings.''
+
+\clearpage
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead{Concerning other good acts of abbot Samson.}{3}{-0.1cm}
+Qu\ae{}dam juvencula virguncula, ostiatim victum qu\ae{}rens, conquesta est abbati, quod unus ex filiis Ricardi filii Drogonis eam vi oppresserat; qu\ae{} tandem, procurante abbate, pro bono pacis unam marcam accepit. Abbas autem iiij$^\text{or}$ marcas accepit ab eodem R.\ pro concessione concordi\ae{}; sed omnes illas v.\ marcas jussit dari statim cuidam mercatori, hoc pacto, ut pr\ae{}fatam pauperculam duceret in uxorem.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+A certain young girl, who was begging her bread from door to door, made complaint to the abbot that one of the sons of Richard FitzDrogo had assaulted her. This wrong, by the abbot's intervention, was at last settled for the sake of peace by the acceptance of one mark by the girl. The abbot further took four marks from the said Richard for leave to compound for his offence. But all these five marks he ordered to be given at once to a certain pedlar, on condition that he should marry the poor girl.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[Before \textsc{a.d}.\ \oldstylenums{1198}.]{}{2}{-0.7cm}
+In villa Sancti \AE{}dmundi domos lapideas emit abbas, et eas scolarum regimini assignavit,\engnotetext{The date of the foundation of the school by abbot Samson is uncertain. But as there is a grant to the master in \oldstylenums{1198}, the foundation was probably made early in the abbacy of Samson. (Cp.\ Rokewode, p.\ \oldstylenums{123}.)} hac occasione, ut pauperes clerici in perpetuum ibi quieti essent de conductione domus, ad quam conducendam denarium vel obolum singuli scolares, tam impotentes quam potentes, bis in anno conferre cogebantur.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+In the town of St.\ Edmund's the abbot bought stone houses, and appointed them for the maintenance of the schools.\engnotenum{} His reason for so doing was that thus the poor clerks might there be for ever free from paying rent for houses. Hitherto, for the payment of the rent, all the scholars, poor and rich alike, had been compelled to contribute a penny or a halfpenny twice a year.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1190}.]{How the Jews were driven from Saint Edmund's.}{4}{-0.45cm}
+Recuperatio manerii de Mildenhala pro mille marculis argenti et centum, et ejectio Judeorum\engnotetext{Arnold (\emph{Mem}.\ I., \oldstylenums{249}, note) points out that, in the absence of any royal castle to which the Jews might retire for safety, their expulsion was really in their own interests. They would otherwise be always liable to massacre, and especially at this particular time, which was marked by an outburst of fanaticism against the Jews, who were massacred in many towns, especially at York. Diceto (II., \oldstylenums{75}--\oldstylenums{6}) mentions the massacre of fifty-seven Jews at St.\ Edmund's on Palm Sunday, \oldstylenums{1190}.} de villa Sancti \AE{}dmundi, et fundatio novi hospitalis de Babbewell, magn\ae{} probitatis sunt indicia.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+The recovery of the manor of Mildenhall for one thousand one hundred silver marks, and the expulsion of the Jews\engnotenum{} from the town of St.\ Edmund's, and the foundation of a new hospital at Babwell, were signs of great virtue.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Dominus abbas petiit a rege literas ut Judei
+ejicerentur\footnote[\textdagger]{Under the circumstances, this must have been the most humane course in the interest of the Jews themselves. All large English towns at this time were imperfectly policed, and the temper of the populace savage and uncertain. A riot having been once set on foot, the only hope of safety for the Jews was in taking refuge in some royal castle. Thus at Norwich, where there was a massacre of Jews about this time (Feb.\ \oldstylenums{6}, Diceto), those of them who were found in private houses perished; those who escaped to the castle were safe. So at Lincoln, the rumour of an intended attack having come to their ears, the Jews of the town sought shelter in the ``munitio regia'' (Newb.\ iv.\ \oldstylenums{9}) and saved their lives. At York, where the hideous tragedy of their fate was on so large a scale as to attract the notice of history, the Jews, having been admitted into the castle, would have escaped with life but for their own suspicious folly, which led them to shut the gates against the governor, when for some cause he had gone outside the walls. But at Lynn in January, and at Stamford on the \oldstylenums{7}th March, there being no royal castle at either place, the resident Jews had been killed and plundered with impunity. At Bury itself (Harl.\ \oldstylenums{1032}, sub an.\ \oldstylenums{1090}; Diceto, \oldstylenums{651}) there was a murderous outbreak on Palm Sunday (March \oldstylenums{18}) in which, according to Diceto, fifty-seven Jews perished. There was no castle at Bury; to the abbot alone could the survivors look for protection; and Samson knew that he had not sufficient force at his command to ensure it to them. To banish them therefore was the best thing that could be done.} a villa Sancti \AE{}dmundi, allegans quod
+quicquid est in villa Sancti \AE{}dmundi, vel infra \emph{bannamleucam}, de jure Sancti \AE{}dmundi est; ergo, vel Judei debent esse homines Sancti \AE{}dmundi, vel de villa sunt ejiciendi. Data est ergo licentia, ut eos ejiceret, ita tamen quod haberent omnia katalla, scilicet et pretia domorum suarum et terrarum. Et cum emissi essent, et armata manu conducti ad diversa oppida, abbas jussit sollemniter excommunicari per omnes ecclesias et ad omnia altaria omnes illos, qui de cetero receptarent Judeos vel in hospitio reciperent in villa Sancti \AE{}dmundi. Quod tamen postea dispensatum est per justiciaries regis, scilicet, ut si Judei venerint ad magna placita abbatis ad exigendum debita sua a debitoribus suis, sub hac occasione poterunt duobus diebus et ij.\ noctibus hospitari in villa, tertio autem die libere discedent.
+\end{otherlanguage}
+
+\switchcolumn
+
+The lord abbot sought letters from the king that the Jews might be expelled from the town of St.\ Edmund's, asserting that whatever is in the town of the blessed Edmund, or within the district subject to the jurisdiction of the monastery, belongs of right to the Saint, and that consequently the Jews ought either to be the men of St.\ Edmund, or else be driven from the town. Leave, therefore, was given to him to eject them, provided that they should have all their chattels, as well as the value of their houses and lands. And when they were sent forth, and under armed force were conducted to various towns, the abbot ordered that  in every church and before every altar those should be solemnly excommunicated who should henceforth receive Jews or entertain them as guests in the town of St.\ Edmund's. This provision was afterwards modified by the justices of the king, to the effect that if Jews should come to the great pleas of the abbot in order to exact debts due to them from their debtors, then for this reason they might be entertained for two days and two nights in the town, and depart in peace on the third day.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1189} September.]{How the abbot secured the manor of Mildenhall, and endowed the hospital at Babwell.}{5}{-0.6cm}
+Abbas optulit regi Ricardo quingentas marcas pro manerio de Mildenhala,\engnotetext{This manor was in the hands of the Crown in Domesday. It had, however, been granted to St.\ Edmund by the charter of Edward the Confessor, and was held by a certain Stigand during the life of Edward (\emph{Mem}.\ I., \oldstylenums{48} and \oldstylenums{250}, note \emph{a}; cp.\ \emph{Monasticon} III., \oldstylenums{188}). The present transaction is related by Benedictus (II., \oldstylenums{91}; cp.\ Hoveden, III., \oldstylenums{18}) ``And Samson, abbot of St.\ Edmund's, bought from King Richard the manor, which is called Mildenhall, for one thousand marks, because it was said to have belonged originally to the abbey of St.\ Edmund's.''} dicens illud manerium lx.\ librarum et decem, et pro tanto esse rollatum in magna rolla de Wincestria.\footnote[\textdagger]{Domesday Book; the returns forming the basis of which ``were transmitted to a board sitting at Winchester, by whom they were arranged in order and placed upon record'': Lingard, i.\ \oldstylenums{249}.}\engnotetext{That is, Domesday Book.} Et cum ita spem voti sui concepisset, cepit res dilationem usque in crastinum. Interim venit aliquis dicens regi, manerium illud bene valere c.\ libras. In crastino ergo abbate petitioni su\ae{} instante, dixit rex: ``Nichil est, domine abbas, quod qu\ae{}ris, vel mille marcas dabis, vel manerium non habebis.''
+
+\end{otherlanguage}
+
+\switchcolumn
+
+The abbot offered king Richard five hundred marks for the manor of Mildenhall,\engnotenum{} saying that the annual value of that manor was seventy pounds, and that it had been enrolled for that amount in the great roll of Winchester.\engnotenum{} And when he thought that he would obtain his desire in this matter, the settlement of the affair was postponed to the following day. In the interval there came one to the king and told him that the manor was worth quite one hundred pounds. And so when the abbot urged his request on the morrow, the king said to him, ``My lord abbot, it is useless for you to make this petition to me. Either you shall give me a thousand marks, or you shall not have the manor.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Cum autem regina Ellienor secundum consuetudinem regni\footnote[\textdagger]{The ``custom'' here alluded to is described by Blackstone (\emph{Commentaries}, i.\ \oldstylenums{229}, edition of \oldstylenums{1844}) as ``an ancient perquisite called queen-gold or \emph{aurum regin\ae{}},'' due, in proportion of ten per cent., from every person making a voluntary offering to the king. ``As, if an hundred marks of silver be given to the king for liberty to take in mortmain, or to have a fair, market, park, chase, or free warren, then the queen is entitled to ten marks in silver, or (what was formerly an equivalent denomination) to one mark in gold.''} deberet accipere c.\ marcas ubi rex cepit mille,\engnotetext{This was the ``aurum regin\ae{}'' or queen-gold, a due of ten per cent., to be paid by everyone whoe made a gift to the king. (Blackstone, quoted by Arnold, \emph{Mem}.\ I., \oldstylenums{250}, note \emph{c}.)} accepit a nobis calicem magnum aureum in pretium c.\ marcarum, et eundem calicem nobis reddidit pro anima domini sui regis Henrici, qui eum primo dederat Sancto \AE{}dmundo.
+\end{otherlanguage}
+
+\switchcolumn
+
+But queen Eleanor, who according to the custom of the realm, had the right to receive a hundred marks when the king received a thousand,\engnotenum{} took from us a great gold chalice of the value of a hundred marks, and restored this same chalice to us for the good of the soul of king Henry her lord, who had originally given it to St.\ Edmund.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1193}]{}{2}{-.7cm} 
+Alia quoque vice, cum thesaurus ecclesi\ae{} nostr\ae{}\textsuperscript{\ddag} portaretur Lundonias ad redemptionem regis Ricardi, eadem regina\textsuperscript{*} eundem calicem adquietavit pro c.\ marcis et nobis reddidit, accipiens cartam nostram a nobis in testimonium promissionis nostr\ae{} fact\ae{} in verbo veritatis, quod calicem ilium nunquam pro aliquo casu ab ecclesia nostra alienabimus.\footnote[]{\textsuperscript{\ddag}The exaction of a heavy ransom by a German emperor (Henry VI.) from an adversary who had fallen under his power, like the substantially similar transaction in \oldstylenums{1871}, was conducted with all the forms of courtesy. The sum demanded was \oldstylenums{70,000} marks; and Richard declared (in the letter to his mother written from Haguenau on the \oldstylenums{19}th April \oldstylenums{1193}, in obedience to which St.\ Edmund's and all other monasteries in the kingdom handed over their gold and silver to royal commissioners), that the treaty of amity which he had concluded with the emperor was worth all the money, and that if he were free and at home in England, he would voluntarily pay as much or more money to obtain such a treaty! (Hoved.\ iii.\ \oldstylenums{209}).}\footnote[]{\textsuperscript{*}``The Queen's release of the golden chalice is set forth in the Registr.\ Sacr., fol.\ \oldstylenums{29} \emph{v}., and is printed in Dugdale'' (Rokewode).}\engnotetext{Richard was ransomed from Henry VI., for \oldstylenums{100,000} marks of silver ``according to the standard of Koln.'' (Hoveden, III., \oldstylenums{215}--\oldstylenums{6}. Diceto, II., \oldstylenums{110}.) The demands made on the clergy and laity may be found in Hoveden (III., \oldstylenums{208} ff). All the monasteries were obliged to hand over their gold and silver, which was placed in the hands of royal commissioners appointed to superintend the raising of the ransom. (Hoveden, III., \oldstylenums{210}.)}\engnotetext{The charter of release is printed in Dugdale's \emph{Monasticon} (Ed.\ \oldstylenums{1846}; Vol.\ III., \oldstylenums{154}).}
+
+\end{otherlanguage}
+
+\switchcolumn
+
+At a later date, when the treasure of our church was carried to London for the ransom of king Richard,\engnotenum{} the queen redeemed the same chalice\engnotenum{} for a hundred marks and restored it to us, and received from us a charter in proof of our promise, made on the word of truth, that we would never for any reason alienate that chalice from our church.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1198}]{}{2}{-.7cm} 
+Cum autem persoluta esset tanta pecunia cum magna difficultate adquisita, sedit abbas in capitulo, dicens se habere aliquam portionem de tanto qu\ae{}stu tanti manerii. Et responsum est a conventu quod hoc justum est, et ad voluntatem vestram fiat. Et dixit abbas, so posse vindicare de jure dimidiam partem, ostendens se plusquam cccc.\ marcas cum magnis laboribus expendisse, sed dixit se esse contentum quadam portione illius manerii, qu\ae{} dicitur Ikelingham; quod concessum est ei libentissime a conventu. Abbas vero hoc audiens, dixit: ``Et ego illam partem terr\ae{} recipio ad meum opus, non ut retineam in manu mea, vel ut parentibus meis donem, sed pro anima mea et pro animabus vestris communiter dono illam novo hospitali de Babbewell,\engnotetext{Traces of this are to be found in a small ruin near the railway bridge on the Thetford road. (Arnold, \emph{Mem}.\ I., \oldstylenums{252}, note \emph{a}.)} in sustentationem pauperum et usum hospitalitatis.'' Dixit, et ita factum est, et carta regis postea confirmatum.\engnotetext{On this charter, see Rokewode (p.\ \oldstylenums{124}--\oldstylenums{5}).}
+
+\end{otherlanguage}
+
+\switchcolumn
+
+Now when this large sum of money had been collected with great difficulty and had been paid, the abbot, sitting in the chapter, said that he ought to share somewhat in so great an acquisition as that of so fair a manor. And the monastery answered, ``That is just. Let it be done according to your will.'' And the abbot said that he might lawfully claim half of it, and showed that he had spent more than four hundred marks with great labour, but that he would be content with one portion of that manor, a place called Icklingham, and this was most readily granted to him by the monastery. Hearing this, the abbot said, ``And I receive that portion of the land for my own purposes, not that I may keep it in my hand or to give it to my relations, but that for the good of my soul and of the souls of all of you, I give it to the new hospital at Babwell,\engnotenum{} for the support of the poor and for the use of the hospital.'' So he spoke, and so it was done, and the act was afterwards confirmed by a charter from the king.\engnotenum{}
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+H\ae{}c et consimilia facta, scriptis et laudibus \ae{}ternanda, fecit abbas Samson. Nichil tamen se dixit agere, nisi posset facere in diebus suis dedicari ecclesiam nostram; post quod factum, asseruit se velle mori: ad cujus facti sollemnitatem dixit se esse paratum expendere duo milia marcas argenti, dummodo dominus rex ibi esset pr\ae{}sens, et res debito honore peragi possit.
+\end{otherlanguage}
+
+\switchcolumn
+
+These and other like things did abbot Samson, which are worthy to be written down and to be praised for all time. Yet he declared that he would have done nothing, unless in his time he could bring to pass that our church should be dedicated; and when that had been accomplished, he asserted that he was ready to die. Moreover, he said that for the doing of this thing he would expend two thousand marks of silver, if so the king might be present and the affair carried through with due ceremony. 
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1183}]{Concerning the church of Woolpit, and how it was secured for the abbey.}{4}{-.65cm} 
+Nuntiatum est abbati, quod ecclesia de Wlpet vacaret, Waltero de Constantiis\footnote[\textdagger]{Walter of Coutances, who, when archdeacon of Oxford, had been one of the witnesses to Henry II.'s will, was elected to Lincoln in July \oldstylenums{1183}, and consecrated in France, by Richard, archbishop of Canterbury. In the following year he was made archbishop of Rouen. Many interesting letters from him to Ralph de Diceto, dean of London, are preserved in the \emph{Ymagines Historiarum} of the latter.}\engnotetext{Elected bishop of Lincoln and consecrated in \oldstylenums{1183}. In the next year he was translated to Rouen. He was one of Richard I.'s most trusted servants, and was sent to England to settle the disputes which arose between Longchamp and John after the departure of Richard on the crusade. He died in \oldstylenums{1207}.} electo ad episcopatum de Lincolnia. Mox convocavit priorem et magnam partem conventus, et incipiens narrationem suam, et\footnote[\ddag]{\emph{Sic.}} ait: ``Bene scitis quod multum laboravi propter ecclesiam de Wlpet, propter quam habendam in proprios usus vestros iter arripui versus Romam per consilium vestrum, tempore scismatis inter papam Alexandrum et Octavianum,\engnotetext{On the death of Adrian IV., in \oldstylenums{1159}, Cardinal Roland was elected by a majority only, and took the name of Alexander III. The imperialist party, however, declared Cardinal Octavian pope under the name of Victor IV. Octavian was supported by the citizens of Rome and by the emperor, and recognised by the imperial synod of Pavia. Alexander took refuge in France. Victor died (\oldstylenums{1164}) without the dispute having been finally settled. (Cp.\ Gregorovius, \emph{City of Rome in the Middle Ages} (Eng.\ trans.) Vol.\ IV, p.\ \oldstylenums{563} ff.)} transivique per Italiam, illa tempestate qua omnes clerici qui portabant literas domini pap\ae{} Alexandri capiebantur, et quidam incarcerabantur, quidam suspendebantur, quidam, truncatis naso et labiis, remittebantur ad papam in dedecus et confusionem ipsius. Ego vero simulavi me esse Scottum,\engnotetext{Arnold (\emph{Mem}.\ I., xliii.) gives as the reason for Samson's action the fact that Scotland favoured the party of Octavian, in opposition to the English support of Alexander.} et Scotti habitum induens, et gestum Scotti habens, s\ae{}pe illis qui mihi illudebant baculum meum excussi, ad modum teli quod vocatur \emph{gaveloc}, de more Scottorum voces comminatorias proferens. Obviantibus et interrogantibus, quis essem, nichil respondi, nisi: `\emph{Ride, ride Rome, turne Cantwereberei.}'\engnotetext{Arnold (\emph{Ibid}., note \oldstylenums{1}) gives as the meaning of this, ``I am riding towards Rome, turning from Canterbury.'' He adds, ``If he had meant to say, `returning from Canterbury,' he would at once have been taken for an English adherent of Alexander.''} Sic feci, ut me et propositum meum celarem,
+\vspace{-0.3cm}
+\begin{verse}
+{\footnotesize
+Tutius et peterem, Scotti sub imagine, Romam.}
+\end{verse}
+\vspace{-0.3cm}
+Impetratis autem literis a domino papa pro voto meo, in redeundo transivi per quoddam castellum, sicut via mea ducebat ab urbe; et ecce ministri de castro circumdederunt me, capientes et dicentes: `Iste solivagus, qui Scottum se facit, vel explorator est, vel portitor literarum falsi pap\ae{} Alexandri.' Et dum perscrutabantur panniculos meos et caligas, et femoralia, et etiam sotulares veteres, quos super humeros portavi ad consuetudinem Scottorum, injeci manum meam in peram quam portavi cuteam, in qua scriptum domini pap\ae{} continebatur, positum sub ciffo parvo, quo bibere solebam: et Domino Deo volente, et sancto \AE{}dmundo, simul extraxi scriptum illud cum ciffo, ita quod, brachium extendens in altum, breve tenui sub ciffo. Ciffum quidem viderunt, sed breve non perceperunt. Et sic evasi manus eorum in nomine Domini. Quicquid monet\ae{} habui abstulerunt a me, unde oportuit me ostiatim mendicare, sine omni expensa, donec in Angliam venirem. Audiens autem quod ecclesia illa data esset Galfrido Ridello,\engnotetext{Archdeacon of Canterbury, and a strenous opponent of Becket. He was elected to Ely in \oldstylenums{1173}, and died in \oldstylenums{1189}. In the text of the \emph{Chronicle} there will be found an account of a dispute between him and Samson, as to the bishop's right to demand timber (p.\ \oldstylenums{113} ff.).} contristata est anima mea, eo quod in vanum laboravi. Veniens ergo domum, feretro Sancti \AE{}dmundi latenter me supposui, timens ne dominus abbas me caperet, et incarceraret, qui nichil mali merueram; nec erat monachus qui mecum audebat loqui, nec laicus qui mihi auderet victum ministrare, nisi aliquis furtive. Tandem, inito consilio, misit me abbas apud Acram in exilium,\engnotetext{As to this, see note to p.\ \oldstylenums{6}.} ibique diu moram feci. H\ae{}c et multa alia mala innumerabilia passus sum propter ecclesiam de Wlpet; sed benedictas Deus, qui omnia cooperat in bonum; ecce! ecclesia, pro qua tot mala sustinui, data est in manu mea, et nunc potestatem habeo donandi eam ubi voluero, quia vacat. Et ego eam conventui reddo, et in suos proprios usus assigno antiquam consuetudinem vel pensionem x.\ marcarum, quam perdidistis plus quam lx.\ annis. Integram libentius vobis eam darem, si possem; sed scio, quod episcopus Norwicensis mihi contradiceret, vel si hoc concederet, tali occasione subjectionem et obedientiam de vobis sibi vindicaret, quod est inconsultum et inconveniens. Faciamus ergo quod de jure possumus facere; ponamus clericum vicarium, qui episcopo respondeat de spiritualibus, et vobis de decem marcis; et volo, si vos consulitis, ut vicaria ilia donetur alicui consanguineo R.\ de Hengheham, monachi et fratris vestri, qui mihi fuit consors in illo itinere versus Romam, et eisdem periculis expositus et propter idem negotium.''
+
+\end{otherlanguage}
+
+\switchcolumn
+
+The abbot learnt that the church of Woolpit was vacant, for Walter of Coutances\engnotenum{} had been elected to the bishopric of Lincoln. And presently he summoned together the prior and most of the monastery, and taking up his tale, said: ``You know well what great labours I have undergone in the matter of the church of Woolpit, and how to secure it for your exclusive use I journeyed to Rome by your advice, in the days of the schism between Alexander and Octavian.\engnotenum{} And I traversed Italy at the time when all clerks bearing letters of pope Alexander were seized, some of them being imprisoned and others hanged, and others, after having their noses and lips cut off, were sent back to the pope to his shame and confusion. I, however, pretended that I was a Scot,\engnotenum{} and put on Scottish dress, and adopted the manners of a Scot. And I often shook my staff as they shake the weapon which they call a gaveloc at those who mocked me, shouting threatening words in the manner of the Scots. To those who met me and asked me who I was, I answered nothing except, `Ride, ride Rome, turne Cantwereberei.'\engnotenum{} I acted thus that so I might conceal my purpose, and as a Scot might safely reach Rome. Then when I had obtained from the lord pope such letters as I desired, on my homeward way I passed by a certain castle as the road led me from the city. And, lo! the officers of the castle surrounded me, laying hold on me, and crying, `This wanderer, who makes himself out to be a Scot, is either a spy or one bearing letters of the false pope Alexander.' And while they closely examined my clothes and boots and undergarments, and even the old shoes, which I carried on my shoulders in the Scottish manner, I put my hand into the little bag which I carried, and in which the letter of the lord pope was contained, lying under a little cup from which I was wont to drink. And the Lord God and St.\ Edmund willing it, I drew out the writing and the cup together, so that, stretching my hand on high, I held the writ underneath the cup. And they saw the cup, it is true, but they did not notice the writ. And so I escaped their hands, in the name of the Lord. Whatever money I had on me they took away, so that it was necessary for me to beg for my bread, spending nothing, until I came to England. But when I heard that the church was given to Geoffrey Ridel,\engnotenum{} my soul was grieved with the thought that my labour had been vain. So when I reached home I secretly cast myself before the shrine of St.\ Edmund, for I feared that the lord abbot would seize me and cast me into prison, who had deserved no ill. And there was no monk who dared to speak with me, and no layman who dared supply me with food, save secretly. At length, the abbot took counsel and exiled me to Acre,\engnotenum{} and there I long remained. These and many other countless ills I have suffered for the sake of the church of Woolpit. But blessed be God, Who maketh all things work together for good! Behold! the church for which I have borne so many hardships, is given into my hand, and now I have the power to give it to whomsoever I will, since it is vacant. And I restore it to the monastery, and for its sole use I assign the ancient customary due or pension of ten marks, which you have lost for more than sixty years. I would give it in its entirety to you with pleasure were I able to do so; but I know that the bishop of Norwich would forbid this, or if he were to grant it, he would make it an excuse to demand subjection and obedience from you, which is neither wise nor convenient. Therefore let us do what we may lawfully do. Let us place there a clerk as vicar to answer to the bishop for the spiritualities, and to you for the ten marks; and I wish, if you agree, that the vicarage may be given to some relative of Roger de Hengham, a monk and your brother, who was my companion in that journey to Rome, and was exposed to the same dangers as I was and for the same cause.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+His dictis omnes surreximus et gratias egimus; et receptus est Hugo clericus, frater pr\ae{}dicti Rogeri, ad pr\ae{}dictam ecclesiam, salva nobis annua pensione x$^\text{cem}$ marcarum.
+\end{otherlanguage}
+
+\switchcolumn
+
+At these words we all arose and gave thanks; and Hugh, a clerk and a brother of the said Roger, was received in the said church, saving our annual pension of ten marks.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[c.\ \textsc{a.d}.\ \oldstylenums{1186}]{How the abbot disputed with the archbishop concerning the manor of Eleigh.}{5}{-.6cm} 
+In manerio monachorum Cantuariensium, quod dicitur Illegga, et quod est in hundredo abbatis, contigit fieri homicidium. Homines vero archiepiscopi noluerunt pati, ut illi homicid\ae{} starent ad rectum in curia sancti \AE{}dmundi. Abbas vero conquestus est regi Henrico, dicens, quod archiepiscopus Baldewinus\engnotetext{Bishop of Worcester (\oldstylenums{1180}--\oldstylenums{83}). He was elected to Canterbury, after some dispute, on the death of Richard of Dover, December \oldstylenums{1183}. (Gervase, I., \oldstylenums{311} ff.) Died, \oldstylenums{1190}, at the siege of Acre.} vindicabat sibi libertates ecclesi\ae{} nostr\ae{}, optentu cart\ae{} nov\ae{} quam rex dederat ecclesi\ae{} Cantuariensi post mortem sancti Thom\ae{}.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+In a manor of the monks of Canterbury, which is called Eleigh, and which is in the hundred of the abbot, there chanced to be a murder. But the archbishop's men would not allow the murderers to take their trial in the court of St.\ Edmund. Then the abbot made complaint to king Henry, and said that archbishop Baldwin\engnotenum{} was claiming the liberties of our church for himself, on the ground of a new charter which the king had given to the church of Canterbury after the death of the blessed Thomas.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Rex autem respondit, se nunquam fecisse cartam aliquam in pr\ae{}judicium ecclesi\ae{} nostr\ae{} nec aliquid sancto \AE{}dmundo velle auferre, quod habere sole bat. Quo audito, dixit abbas consiliariis privatis suis: ``Sanius consilium est, ut archiepiscopus conqueratur de me, quam ego de archiepiscopo. Volo me ponere in saisinam hujus libertatis, et post me defendam cum auxilio sancti \AE{}dmundi, cujus jus hoc esse cart\ae{} nostr\ae{} testantur.''
+\end{otherlanguage}
+
+\switchcolumn
+
+Then the king answered that he had never given a charter to the prejudice of our church, and that he did not wish to take from the blessed Edmund anything which he had formerly possessed. On hearing this, the abbot said to his intimate advisers: ``It is wiser counsel that the archbishop should make complaint of me than that I should make complaint of the archbishop. I wish to place myself in possession of this liberty, and then I will defend myself with the help of St.\ Edmund, in whose right our charters bear witness that this liberty is.''
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Subito ergo, summo mane, procurante Roberto de Cokefeld, missi sunt circiter quater xx.\ homines armati ad villam de Ilegga, et ex inopinato ceperunt illos tres homicidas et ligatos duxerunt ad Sanctum \AE{}dmundum, et in fundum carceris projecerunt. Conquerente inde archiepiscopo, Ranulfus de Glanvilla justiciarius pr\ae{}cepit, ut homines illi ponerentur per vadium et plegios ad standum ad rectum in curia qua deberent stare, et summonitus est abbas, ut veniret ad curiam regis, responsurus de vi et injuria, quam dicebatur fecisse archiepiscopo. Abbas vero sine omni exonio se pluries pr\ae{}sentavit.
+\end{otherlanguage}
+
+\switchcolumn
+
+Accordingly, unexpectedly, and very early in the morning, with the help of Robert de Cokefield, about eighty armed men were sent to the town of Eleigh, and took those three murderers by surprise and brought them bound to St.\ Edmund's, and cast them into the dungeon of the prison. And when the archbishop made complaint of this, Ranulf Glanvill, the justiciar, commanded that those men should be bound by surety and pledges to stand their trial in the court wherein they ought to stand it; and the abbot was summoned to come to the court of the  king and to make reply concerning the violence and injury which he was said to have done to the archbishop. And the abbot many times presented himself at the court, without attempting to make excuse.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1187} February \oldstylenums{11}.]{}{2}{-.7cm} 
+Tandem in capite jejunii steterunt\engnotetext{Gervase (I., \oldstylenums{353}) mentions the meeting and supplies the date.} coram rege in capitulo Cantuariensi, et lect\ae{} sunt palam cart\ae{} ecclesiarum hinc et inde. Et respondit dominus rex: ``Ist\ae{} cart\ae{} ejusdem antiquitatis sunt et ab eodem rege \AE{}dwardo emanant. Nescio quid dicam nisi ut cart\ae{} ad invicem pugnent.''\footnote[\textdagger]{In margine hic legitur: ``Quia carta quam habemus de sancto \AE{}dwardo antiquior est, quam carta quam habent monachi Cantuarienses. Quia carta, quam habent, non data eis libertatem, nisi inter homines suos tantum: et carta nostra loquitur de tempore regis \AE{}dwardi et de tempore matris su\ae{} regin\ae{} Emm\ae{}, qu\ae{} habuit viii.\ hundredos et dimidium in dotem, ante tempora sancti \AE{}dwardi, et Mildenhale insimul'' (Roke.).} Cui abbas dixit: ``Quicquid de cartis dicatur, nos in saisina sumus, et hucusque fuimus, et de hoc ponere me volo in verumdictum duorum comitatuum, scilicet, Norfolchi\ae{} et Suthfolchi\ae{}, se hoc concedere.''\engnotetext{That is, will admit that the abbey has possessed this jurisdiction from time immemorial. (\emph{Mem}., I., \oldstylenums{256}, note.)}
+
+\end{otherlanguage}
+
+\switchcolumn
+
+At last, at the beginning of the fasting time,\engnotenum{} they stood before the king in the chapter-house of Canterbury, and the charters of the two churches were read publicly. And the lord king answered, ``These charters are of equal age, and come from the same king Edward. I know not what to say, save that the charters are contradictory.'' To this the abbot replied, ``Whatever may be said about the charters, we are seised of the liberty, and have been in the past, and on this point I will submit to the verdict of the two counties, Norfolk and Suffolk, which will allow this.''\engnotenum{}
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Sed archiepiscopus Baldwinus, habito prius consilio cum suis, dixit, homines Norfolchi\ae{} et Suthfolchi\ae{} multum diligere Sanctum \AE{}dmundum, et magnam partem illorum comitatuum esse sub ditione abbatis, et ideo se nolle stare illorum arbitrio. Rex vero iratus inde et indignans surrexit, et recedendo dixit: ``Qui potest capere capiat:''\engnotetext{Matt.\ xix., \oldstylenums{12}.} et sic res cepit dilationem, ``et adhuc sub judice lis est.''\footnote[\textdagger]{Hor.\ de Arte Poet.\ \oldstylenums{78}.}
+\end{otherlanguage}
+
+\switchcolumn
+
+Archbishop Baldwin, however, having first taken counsel with his men, said that the men of Norfolk and Suffolk loved St.\ Edmund greatly, and that a large part of those counties was under the rule of the abbot, and therefore he would not abide by their arbitration. But the king was angry and offended at that, and rising up, left the place, saying, ``He that is able to receive it, let him receive it.''\engnotenum{} And thus the matter was postponed, and is still undecided.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Vidi tamen, quod quidam homines monachorum Cantuariensium vulnerati fuerunt usque ad mortem a rusticis de villa de Meldingis, que sita est in hundredo Sancti \AE{}dmundi; et qui sciverunt, quod actor forum rei sequi debet, maluerunt silere et dissimulare, quam inde clamorem facere abbati sive baillivis ejus, quia nullo modo voluerunt venire in curiam Sancti \AE{}dmundi ad placitandum.
+\end{otherlanguage}
+
+\switchcolumn
+
+But I saw that some of the men of the monks of Canterbury were wounded to the death by the rustics of the township of Midling, which is situated in the hundred of St.\ Edmund, and as they knew that the prosecutor is bound to go to the court of the defendant, they preferred to be silent and to hide the matter, rather than complain of it to the abbot or his officers, since they were in nowise willing to come and plead in the court of St.\ Edmund.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1191}.]{}{2}{-.7cm} 
+Postea levaverunt homines de Illegga quoddam trebuchet, ad faciendam justitiam pro falsis mensuris panis vel bladi mensurandi, unde conquestus est abbas domino Eliensi episcopo,\engnotetext{William Longchamp, elected to Ely and made justiciar and joint regent at the accession of Richard I. He was driven from office in \oldstylenums{1191}, owing to the opposition of John and Hugh Puiset, bishop of Durham. He died in \oldstylenums{1197}.} tunc justiciario et cancellario. Ille vero abbatem audire nolebat, quia dicebatur olfacere archiepiscopatum,\engnotetext{The archbishopric remained vacant from the death of Baldwin until \oldstylenums{1191}---over a year---when Reginald, bishop of Bath, was elected. He died less than fifteen days later. (Benedictus, II., \oldstylenums{226}--\oldstylenums{7}.) The archbishopric then remained vacant again until the election of Hubert Walter, \oldstylenums{1193}.} qui vacabat tunc temporis. Cum autem venisset apud nos, et susceptus esset ut legatus, antequam recederet, orationem fecit ad feretrum sancti martyris; abbasque, nacta opportunitate, dixit, cunctis audientibus qui aderant: ``Domine episcope, libertas, quam sibi vindicant monachi Cantuarienses, est jus sancti \AE{}dmundi, cujus corpus pr\ae{}sens est, et quia non vis me adjuvare ad tuendam libertatem ecclesi\ae{} su\ae{}, pono loquelam inter te et ipsum. Ipse de c\ae{}tero procuret jus suum.'' Cancellarius nichil dignatus est respondere;\engnotetext{The pride of Longchamp is the common theme of all the chroniclers, who unite in attributing his fall to this fault. Having obtained the legation from Clement III., he claimed to be supreme over church and state alike, refusing (perhaps in accord with Richard's instructions) to admit that he had any colleague in the office of justiciar. His character is sketched in a letter of Hugh Nunant, bishop of Coventry, which is to be found in Benedictus (II., \oldstylenums{215}--\oldstylenums{20}). ``He was a man great among all the people of the west, as one having power over the kingdom and the authority of the apostolic see, being as it were ambidextrous. . . . He seemed, indeed, to divide the elements with God, leaving heaven alone to the God of heaven. . . . From sea to sea he was feared as God, and were I to say more than God, I should not lie, for God is long-suffering and merciful, but he did all things ill and in haste.'' William of Newburgh calls him ``that rhinocerous.'' Richard of Devizes calls him ``that three-named and threefold man.''} qui infra  annum Angliam exire compulsus est, et divinam ultionem expertus est.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+After these things the men of Eleigh set up a certain measure for the doing of justice in cases where bread and corn had been measured with false measures, and the abbot made complaint of this to the lord bishop of Ely,\engnotenum{} who was at that time justiciar and chancellor. But he would not hear the abbot, because he was alleged to be scenting the archbishopric,\engnotenum{} which was then vacant. When, however, he had come among us, and was received as legate, before he departed, he made prayer at the shrine of the holy martyr. And the abbot, seizing the opportunity, said in the hearing of all who were present, ``My lord bishop, the liberty, which the monks of Canterbury claim, is the right of St.\ Edmund, whose body is here, and as you will not assist me to protect the liberty of his church, I put a complaint between you and him. Henceforth he may secure his right.'' The chancellor did not condescend to make any answer,\engnotenum{} and within a year was forced to leave England, and suffered divine vengeance.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1193}.]{}{2}{-.7cm} 
+Cum autem idem cancellarius redisset de Almannia,\engnotetext{Longchamp, after failing to persuade the regency to permit his return before, came back to England in \oldstylenums{1193}, with letters from Henry VI.\ as to the ransom of Richard. (Hoveden, III., \oldstylenums{211}.)} et applicuisset apud Gippewic, et pernoctasset apud Heggham, venit rumor ad abbatem, quod cancellarius vellet transire per Sanctum \AE{}dmundum, apud nos missam in crastino auditurus. Prohibuit ergo abbas, ne celebrarentur divina, dum cancellarius esset in ecclesia pr\ae{}sens, quia dixit se audisse, apud Londonias, Londoniensem episcopum pronuntiasse cancellarium esse excommunicatum, et excommunicatum\footnote[\textdagger]{In Dr.\ Lingard's \emph{Hist.\ of Engl}.\ no mention is made of this excommunication. Yet the Chronicle of Bromton (Twys.\ \oldstylenums{1225}) distinctly says, that when in Oct.\ \oldstylenums{1191}, Geoffrey, Archbishop of York, on being released from confinement, came up to London, the archbishop of Rouen (Walter do Coutances) and six English bishops pronounced a sentence of excommunication against the chancellor who had imprisoned him. Diceto probably gives the real facts; he says that the archbishop and bishops pronounced the excommunication at Reading, in general terms, against ``omnes qui consilium, vel auxilium, vel mandatum dederunt, ut archiepiscopus Eboracensis extraheretur ab ecelesia, tractaretur indigne, \&c.,'' and specially against two confidential knights of the chancellor, Alberic de Marines and Alexander Puintel. (ii.\ \oldstylenums{98}, Rolls ed.). With this agrees in substance the account given by Gervase (i.\ \oldstylenums{507}, Rolls ed.). Newburgh, Hoveden, and bishop Hugh de Nunant (in the witty and abusive letter preserved by Benedictus Abbas) make no mention of any excommunication.} recessisse ab Anglia, coram sex episcopis, et nominatim pro violentia illata archiepiscopo Eboracensi\engnotetext{Richard had forbidden Geoffrey to visit England for three years, but the archbishop landed at Dover. There he was arrested by order of Longchamp, but released on the intervention of John. (Benedictus, II., \oldstylenums{106}; \oldstylenums{209}--\oldstylenums{11}.) As to the excommunication of Longchamp, this is mentioned by Benedictus (II., \oldstylenums{211}--\oldstylenums{12}), and by Richard of Devizes (pp.\ \oldstylenums{36}, \oldstylenums{43}, \oldstylenums{56}). Ralph de Diceto (II., \oldstylenums{98}) makes the excommunication general only.} apud Doffram.\footnote[\textdagger]{Geoffrey, who had just been consecrated at Tours, by pope Celestine's order, to the see of York, had sworn to the king, his half brother, that he would not return to England without his leave. He did return however; and on his landing at Dover (Sept.\ \oldstylenums{1191}) was arrested by the chancellor's orders, and thrown into prison.}
+
+\end{otherlanguage}
+
+\switchcolumn
+
+But when the same chancellor had returned from Germany\engnotenum{} and had landed at Ipswich, and spent the night at Hitcham, a report came to the abbot that the chancellor wished to pass through St.\ Edmund's, and to hear mass with us on the morrow. Therefore the abbot forbade the celebration of the divine offices while the chancellor was present in the church, for he said that he had heard in London that the bishop of London had pronounced the chancellor excommunicate, in the presence of six bishops, especially for the violence which he had done to the archbishop of York,\engnotenum{} at Dover, and that the said chancellor, while excommunicate, had departed from England.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+Veniens ergo\footnote[\ddag]{Longchamp fled the kingdom in \oldstylenums{1191}, after his fall from power. ``He came to England in the following year, but was not suffered to proceed farther than Canterbury, and crossed the seas again. In \oldstylenums{1193} the chancellor returned, bearing letters from the emperor, and met the Regency at St.\ Alban's. It was on this occasion that he passed through St.\ Edmundsbury, coming from his manor of Hitcham, after landing at Ipswich.'' (Rokewode.)} in crastino cancellarius apud nos, non invenit qui missam ei cantaret, nec clericum, nec monachum. Immo, sacerdos stans ad primam missam ad canonem miss\ae{}, et ceteri sacerdotes, ad altaria cessaverunt, stantes inmotis labiis, donec nuntius veniret dicens, illum recessisse ab ecclesia. Cancellarius omnia dissimulans, multa gravamina intulit abbati, donec, procurantibus amicis, hinc et inde ad pacis osculum reversi sunt.
+\end{otherlanguage}
+
+\switchcolumn
+
+Accordingly, when the chancellor came among us on the morrow, he found no one to chant mass for him, either clerk or monk. But the priest, indeed, who stood at the first mass and at the canon of the mass, and the other priests by the altars, ceased, and stood with unmoved lips, until a messenger came and said that he had left the chnrch. The chancellor took no notice openly, but he did many ills to the abbot, until, by the mediation of friends, they both returned to the kiss of peace.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1188} January \oldstylenums{21}.]{How the abbot wished to take the cross, and how he offered to seek king Richard in Germany.}{5}{-.55cm} 
+Cum rex Henricus accepisset crucem\engnotetext{At Gisors, \oldstylenums{1188}.} et venisset infra mensem ad nos orationis gratia, abbas ipse sibi fecit crucem occulte de lineo panno, et tenens in una manu crucem et acum et filum, petivit licentiam a rege, ut acciperet crucem; sed denegata est ei licentia, procurante episcopo Norwicensi Johanne,\engnotetext{John of Oxford, elected to Norwich in \oldstylenums{1175}; died, \oldstylenums{1200}. As a matter of fact, John did not go to Palestine. He was waylaid and robbed on his journey, and obtained absolution from his vow from the pope. Richard made this excuse for levying a heavy fine. (Hoveden, III., \oldstylenums{42}. Richard of Devizes, p.\ \oldstylenums{12}.)} et dicente, quia non expediret patri\ae{}, nec tutum esset comitatibus Norfolchi\ae{} et Sutfolchi\ae{}, si episcopus Norwicensis et abbas Sancti \AE{}dmundi simul recederent.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+When king Henry had taken the cross\engnotenum{} and was come less than a month later that he might pray among us, the abbot secretly made for himself in one hand the cross and a needle and thread, he sought leave from the king that he might take the cross. But leave was refused him, for John, bishop of Norwich,\engnotenum{} opposed it, and said that it was not well for the land, nor safe for the counties of Norfolk and Suffolk, that the bishop of Norwich and the abbot of St.\ Edmund's should go away at the same time.
+
+\switchcolumn*
+
+\begin{otherlanguage}{latin}
+\blockhead[\textsc{a.d}.\ \oldstylenums{1193}.]{}{2}{-.7cm} 
+Cum rumor venisset Lundoniis de captione regis Ricardi,\engnotetext{Richard was captured in December, \oldstylenums{1192}, near Vienna, and imprisoned at Durrenstein. In the following year he was handed over to the emperor Henry VI.\ and imprisoned in various castles in Germany. Hoveden (III., \oldstylenums{198}) only mentions the abbots of Boxley and Robertsbridge as going to search for Richard, and it would seem that Samson merely offered to go, though it appears that he did subsequently visit Germany (see text, p.\ \oldstylenums{87}).} et incarceratione ejus in Alemannia, et barones convenissent pro consilio accipiendo, prosiliit abbas coram omnibus, dicens, se esse paratum qu\ae{}rere dominum suum regem, vel in tapinagio vel alio modo, donec eum inveniret, et certam notitiam de eo haberet; ex quo verbo magnam laudem sibi adquisivit.
+
+\end{otherlanguage}
+
+\switchcolumn
+
+When news had reached London of the capture of king Richard,\engnotenum{} and of his imprisonment in Germany, and the barons had met to take counsel on the matter, the abbot stood forth in their presence, and said that he was ready to seek his lord the king. He said that he would search for him in disguise or in any other way, until he found him and had certain knowledge of him. And from this speech he gained great praise for himself.
 
 
 
