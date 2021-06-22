@@ -101,11 +101,12 @@
 \usepackage{marginnote}
 
 
+
+\newcounter{gloss}
+\newcounter{gloss_text}
+
+\newcommand{\megloss}[1]{\textsuperscript{\alph{#1}\stepcounter{#1}}}
 \begin{document}
-
-
-
-
 
 
 
@@ -5460,7 +5461,7 @@ gif þu eart to heafod-men ge-set · ne ahefe þu ðe · \\
 ac beo betƿux mannum sƿa sƿa an man of him · \\
 He ƿ\ae{}s cystig ƿ\ae{}dlum ⁊ ƿydeƿum sƿa sƿa f\ae{}der · \\
 ⁊ mid ƿel-ƿillendnysse geƿissode his folc \\
-symle to riht-ƿisnysse · and þam reþum styrde · \\
+symle to riht-ƿisnysse · ⁊ þam reþum styrde · \\
 ⁊ ges\ae{}liglice leofode on soþan geleafan · \\
 Hit ge-lamp ða \ae{}t nextan þ\ae{}t þa deniscan leode \\
 ferdon mid scip-here hergiende ⁊ sleande \\
@@ -5512,12 +5513,716 @@ and wasted the land and slew the people. \\
 
 \clearpage
 
+
+\newlength\pagelen
+\settowidth\pagelen{for-ðan-þe ðu n\ae{}fst þa mihte þ\ae{}t þu mage him ƿið-standan ·}
+
+\begin{center}
+\parbox{\pagelen}{
 Þa ge-ƿende hinguar east mid his scipum · \\
+⁊ hubba belaf on norð-hymbra-lande · \\
+geƿunnenum sige · mid ƿ\ae{}lhreoƿnysse · \\
+Hinguar þa becom to east-englum roƿende · \\
+on þam geare þe \ae{}lfred \ae{}ðelincg\textsuperscript{\textdagger} · an ⁊ tƿentig geare ƿ\ae{}s · \\
+se þe ƿest-sexena cynincg siþþan ƿearð m\ae{}re · \\
+⁊ se fore-s\ae{}da hinguar f\ae{}rlice sƿa sƿa ƿulf \\
+on lande bestalcode · ⁊ þa leode sloh \\
+ƿeras ⁊ ƿ\'if · ⁊ þa ungeƿittigan cild · \\
+⁊ to bysmore tucode þa bileƿitan cristenan · \\
+He sende ða sona syððan to þam cyninge \\
+beotlic \ae{}reude · þ\ae{}t he abugan sceolde \\
+to his man-r\ae{}dene gif he rohte his feores · \\
+Se \ae{}rendraca com þa to eadmunde cynincge \\
+⁊ hinguares \ae{}rende him ardlice abead · \\
+Hinguar ure cyning cene ⁊ sigef\ae{}st · \\
+on s\'\ae{} ⁊ on lande · h\ae{}\hspace{2.5pt}{\fontspec{clara_feth}^^^^e003} fela þeoda geƿyld · \\
+⁊ com nu mid fyrde f\ae{}rlice her to lande \\
+þ\ae{}t he her winter-setl mid his ƿerode h\ae{}bbe · \\
+Nu het he þe d\ae{}lan þine digelan gold-hordas · \\
+⁊ þinra yldrena gestreon ardlice ƿið hine · \\
+⁊ þu beo his under-kyning · gif ðu cucu beon ƿylt · \\
+for-ðan-þe ðu n\ae{}fst þa mihte þ\ae{}t þu mage him ƿið-standan · \\
+Hƿ\ae{}t þa eadmund clypode \ae{}nne bisceop · \\
+þe him þa gehendost ƿ\ae{}s ⁊ ƿið hine smeade \\
+hu he þam reþam hinguare and-ƿyrdan sceolde · \\
+Þa forhtode se bisceop for þam f\ae{}rlican gelimpe · \\
+⁊ for þ\ae{}s cynincges life · ⁊ cƿ\ae{}þ þ\ae{}t him rǽd þuhte \\
+þ\ae{}t he to þam gebuge þe him bead hinguar · \\
+Þa suƿode se cynincg ⁊ beseah to þ\ae{}re eorþan · \\
+⁊ cƿ\ae{}þ þa \ae{}t nextan cynelice him to · \\
+Eala þu bisceop to bysmore synd getaƿode \\
+}\footnotetext{\textsuperscript{\textdagger}This reference to \AE{}lfred was inserted by \AE{}lfric. The date of St.\ Eadmund's death is \oldstylenums{870}. \AE{}lfred was born in \oldstylenums{849}, and Eadmund in \oldstylenums{841}.}
+\end{center}
+
+\clearpage
+
+
+\settowidth\pagelen{in the year when \AE{}lfred the \ae{}theling was one and twenty years old,}
+
+\begin{center}
+\parbox{\pagelen}{
+Then Hingwar turned eastward with his ships, \\
+and Hubba was left in Northumbria, \\
+having won the victory by means of cruelty. \\
+Then Hingwar came rowing to East Anglia \\
+in the year when \AE{}lfred the \ae{}theling was one and twenty years old, \\
+he who afterward became the renowned king of the West-Saxons. \\
+And the aforesaid Hingwar suddenly, like a wolf,  \\
+stalked over the land and slew the people, \\
+men and women, and witless children, \\
+and shamefully tormented the innocent Christians. \\
+Then soon afterward he sent to the king \\
+a threatening message, that he must bow down \\
+to do him homage, if he recked of his life. \\
+So the messenger came to king Edmund, \\
+and speedily announced to him Hingwar's message. \\
+``Hingwar our king, keen and victorious \\
+by sea and by land, hath rule over many peoples, \\
+and has landed here suddenly even now with an army, \\
+that he may take up his winter-quarter's here with his host. \\
+Now he commandeth thee to divide thy secret treasures  \\
+and thine ancestors' wealth quickly with him, \\
+and thou shalt be his under-king, if thou desire to live, \\
+because thou hast not the power that thou mayst withstand him.'' \\
+So then king Edmund called a bishop  \\
+who was handiest to him, and consulted with him \\
+how he should answer the savage Hingwar. \\
+Then the bishop feared for this terrible misfortune, \\
+and for the king's life, and said that it seemed best to him \\
+that he should submit to that which Hingwar bade him. \\
+Then the king kept silence and looked on the ground, \\
+and said to him at last even like a king; \\
+``Behold, thou bishop, the poor people of this land \\
+}
+\end{center}
+
+
+\settowidth\pagelen{\AE{}fter þysum ƿordum he geƿende to þam \ae{}rendracan}
+
+\begin{center}
+\parbox{\pagelen}{
+þas earman land-leoda · ⁊ me nu leofre ƿ\ae{}re \\
+þ\ae{}t ic on feohte feolle · ƿið þam þe min folc \\
+moste heora eardes brucan · ⁊ se bisceop cƿ\ae{}þ · \\
+Eala þu leofa cyning þin folc lið ofslagen · \\
+⁊ þu n\ae{}fst þone fultum þ\ae{}t þu feohtan m\ae{}ge · \\
+⁊ þas flot-men cumað · ⁊ þe cucenne gebindað \\
+butan þu mid fleame þinum feore gebeorge · \\
+oððe þu þe sƿa gebeorge þ\ae{}t þu buge to him · \\
+Þa cƿ\ae{}þ eadmund cyning sƿa sƿa he ful cene ƿ\ae{}s · \\
+Þ\ae{}s ic geƿilnige ⁊ geƿisce mid mode · \\
+þ\ae{}t ic ana ne belife \ae{}fter minum leofum þegnum \\
+þe on heora bedde ƿurdon mid bearnum · ⁊ ƿifum · \\
+f\ae{}rlice ofsl\ae{}gene fram þysum flot-mannum · \\
+N\ae{}s me n\ae{}fre geƿunelic þ\ae{}t ic ƿorhte fleames · \\
+ac ic ƿolde sƿiðor sƿeltan gif ic þorfte \\
+for minum agenum earde · ⁊ se \ae{}lmihtiga god w\'at \\
+þ\ae{}t ic nelle abugan fram his biggengum \ae{}fre · \\
+ne fram his soþan lufe · sƿelte ic · lybbe ic · \\
+\AE{}fter þysum ƿordum he geƿende to þam \ae{}rendracan \\
+þe hinguar him to sende · ⁊ s\ae{}de him unforht · \\
+Ƿitodlice þu ƿ\ae{}re ƿyrðe sleges nu · \\
+ac ic nelle afylan on þinum fulum blode \\
+mine cl\ae{}nan handa · forðan-þe ic criste folgie \\
+þe us sƿa ge-bysnode · ⁊ ic bliðelice ƿille beon \\
+ofslagen þurh eoƿ gif hit sƿa god fore-sceaƿað · \\
+Far nu sƿiþe hraðe · ⁊ sege þinum reþan hlaforde · \\ 
+ne abihð n\ae{}fre eadmund hingƿare on life \\
+h\ae{}þenum here-togan · buton he to h\ae{}lende criste \\
+\ae{}rest mid ge-leafan on þysum lande gebuge · \\
+Þa geƿende se \ae{}rend-raca ardlice aƿeg · \\
+⁊ gemette be ƿ\ae{}ge þone ƿ\ae{}lhreoƿan hingƿar \\
+mid eallre his fyrde fuse to eadmunde · \\
+⁊ s\ae{}de þam arleasan hu him geandƿyrd ƿ\ae{}s · \\
+Hingƿar þa bebead mid bylde þam scip-here \\
+þ\ae{}t hi þaes cynincges anes ealle cepan sceoldon · \\
+}
+\end{center}
+
+
+\settowidth\pagelen{and thou hast not sufficient forces with which thou mayest fight,}
+
+\begin{center}
+\parbox{\pagelen}{
+are brought to shame, and it were now dearer to me \\
+that I should fall in fight against him who would possess \\
+my people's inheritance.'' And the bishop said, \\
+``Alas, thou dear king thy people lie slain,  \\
+and thou hast not sufficient forces with which thou mayest fight, \\
+and these seamen will come and will bind thee alive, \\
+unless thou save thy life by means of flight, \\
+or thus save thyself by yielding to him.'' \\
+Then said Edmund the king, full brave as he was; \\
+``This I desire and wish in my mind, \\
+that I should not be left alone after my dear thanes, \\
+who even in their beds, with their bairns and their wives, \\
+have by these seamen been suddenly slain. \\
+It was never my custom to take to flight,  \\
+but I would rather die, if I must, \\
+for my own land; and almighty God knoweth \\
+that I will never turn aside from His worship, \\
+nor from His true love, whether I die or live.'' \\
+After these words he turned to the messenger \\
+whom Hingwar had sent to him, and said to him undismayed: \\
+``Verily thou wouldest now be worthy of death, \\
+but I will not defile my clean hands \\
+with thy foul blood, because I follow Christ, \\
+who hath so given us an example, and I will blithely \\
+be slain by you, if God hath so ordained. \\
+Depart now very quickly, and say to thy cruel lord; \\
+Edmund the king will never bow in life to Hingwar \\
+the heathen leader, unless he will first bow,  \\
+in this land, to Jesus Christ with faith.'' \\
+Then went the messenger quickly away, \\
+and met on the way the bloodthirsty Hingwar \\
+with all his army hurrying to Edmund, \\
+and told that wicked man how he was answered. \\
+Hingwar then arrogantly commanded his troops \\
+that they should, all of them, take the king alone, \\
+}
+\end{center}
+
+
+\settowidth\pagelen{Hi scuton þa mid gafelucum sƿilce him to gamenes to · (\emph{sic})}
+
+\begin{center}
+\parbox{\pagelen}{
+þe his h\ae{}se forseah · ⁊ hine sona bindan · \\
+Hƿ\ae{}t þa eadmund cynincg mid þam þe hingƿar com · \\
+stod innan his healle þ\ae{}s h\ae{}lendes gemyndig · \\
+⁊ aƿearp his ƿ\ae{}pna ƿolde g\ae{}fen-l\ae{}can \\
+cristes gebysnungum · þe for-bead petre \\
+mid ƿ\ae{}pnum to ƿinnenne ƿið þa ƿ\ae{}lhreoƿan iudeiscan · \\
+Hƿ\ae{}t þa arleasan þa eadmund gebundon \\
+⁊ gebysmrodon huxlice · ⁊ beotan mid saglum · \\
+⁊ sƿa syððan l\ae{}ddon þone geleaf-fullan cyning \\
+to anum eorð-f\ae{}stum treowe · and tigdon hine þ\ae{}r-to · \\
+mid heardum bendum · ⁊ hine eft sƿuncgon \\
+langlice mid sƿipum · ⁊ he symble clypode \\
+betƿux þam sƿinglum mid soðan geleafan \\
+to h\ae{}lende criste · ⁊ þa h\ae{}þenan þa \\
+for his geleafan ƿurdon ƿodlice yrre \\
+for-þan-þe he clypode crist him to fultume · \\
+Hi scuton þa mid gafelucum sƿilce him to gamenes to · (\emph{sic}) \\
+oð þ\ae{}t he eall ƿ\ae{}s bes\ae{}t mid heora scotungum \\ 
+sƿilce igles byrsta · sƿa sƿa sebastianus ƿ\ae{}s · \\
+Þa geseah hingƿar se arlease flot-man · \\
+þ\ae{}t se \ae{}þela cyning nolde criste ƿið-sacan · \\
+ac mid anr\ae{}dum geleafan hine \ae{}fre clypode · \\
+het hine þa beheafdian ⁊ þa h\ae{}ðenan sƿa dydon · \\
+Betƿux þam þe he clypode to criste þagit \\
+þa tugon þa · h\ae{}þenan þone halgan to sl\ae{}ge · \\
+⁊ mid anum sƿencge slogon him of þ\ae{}t heafod · \\
+⁊ his saƿl siþode ges\ae{}lig to criste · \\
+Þ\ae{}r ƿ\ae{}s sum man gehende gehealden þurh god · \\
+behyd þam h\ae{}þenum · þe þis gehyrde eall · \\
+⁊ hit eft s\ae{}de sƿa sƿa ƿe hit secgað her · \\
+Hƿ\ae{}t ða se flot-here ferde eft to scipe · \\
+⁊ behyddon þ\ae{}t heafod þ\ae{}s halgan eadmundes · \\
+on þam þiccum bremelum þ\ae{}t hit bebyrged ne ƿurde · \\
+Þa \ae{}fter fyrste syððan hi afarene ƿ\ae{}ron \\
+com þ\ae{}t land-folc to þe þ\ae{}r to lafe ƿ\ae{}s þa · \\
+}
+\end{center}
+
+
+\settowidth\pagelen{then he commanded men to behead him, and the heathen did so.}
+
+\begin{center}
+\parbox{\pagelen}{
+who had despised his command, and instantly bind him. \\
+Then Edmund the king, when Hingwar came, \\
+stood within his hall mindful of the Saviour, \\
+and threw away his weapons, desiring to imitate \\
+Christ's example, who forbade Peter \\
+to fight with weapons against the bloodthirsty Jews.\footnote[\textdagger]{John xviii., \oldstylenums{11}.} \\
+Then those wicked men bound Edmund, \\
+and shamefully insulted him, and beat him with clubs, \\
+and afterward they led the faithful king \\
+to an earth-fast tree, and tied him thereto \\
+with hard bonds, and afterwards scourged him \\
+a long while with whips, and ever he called, \\
+between the blows, with true faith, \\
+on Jesus Christ; and then the heathen \\
+because of his faith were madly angry, \\
+because he called upon Christ to help him. \\
+They shot at him with javelins as if for their amusement, \\
+until he was all beset with their shots, \\
+as with a porcupine's bristles, even as Sebastian was. \\
+When Hingwar, the wicked seaman, \\
+saw that the noble king would not deny Christ, \\
+but with steadfast faith ever called upon Him, \\
+then he commanded men to behead him, and the heathen did so. \\
+For while he was yet calling upon Christ, \\
+the heathen drew away the saint, to slay him, \\
+and with one blow struck off his head; \\
+and his soul departed joyfully to Christ. \\
+There was a certain man at hand, kept by God \\
+hidden from the heathen, who heard all this, \\
+and told it afterward even as we tell it here. \\
+So then the seamen went again to ship, \\
+and hid the head of the holy Edmund \\
+in the thick brambles, that it might not be buried. \\
+Then after a space, after they were gone away, \\
+came the country-folk, who were still left there, \\
+}
+\end{center}
+
+
+\settowidth\pagelen{andsƿarigende him eallum · sƿa oft sƿa heora \ae{}nig clypode ·}
+
+\begin{center}
+\parbox{\pagelen}{
+
+þ\ae{}r heora hlafordes lic l\ae{}g butan heafde · \\
+⁊ ƿurdon sƿiðe sarige for his slege on mode · \\
+⁊ huru þ\ae{}t hi n\ae{}fdon þ\ae{}t heafod to þam bodige · \\
+Þa s\ae{}de se sceaƿere þe hit \ae{}r geseah \\
+þ\ae{}t pa flot-men h\ae{}fdon þ\ae{}t heafod mid him · \\
+⁊ ƿ\ae{}s him geðuht sƿa sƿa hit ƿ\ae{}s ful soð \\
+þ\ae{}t hi behyddon þ\ae{}t heafod on þam holte forhƿega · \\
+Hi eodon þa secende ealle endemes to þam ƿuda · \\
+secende gehƿ\ae{}r geond þyfelas and bremelas \\
+gif hi a-hƿ\ae{}r mihton gemeton (\emph{sic}) þ\ae{}t heafod · \\
+ƿ\ae{}s eac micel ƿundor þ\ae{}t an ƿulf ƿearð asend \\
+þurh godes ƿissunge to beƿerigenne þ\ae{}t heafod \\
+ƿið þa oþre deor · ofer d\ae{}g · ⁊ niht · \\
+Hi eodon þa secende · ⁊ symle clypigende · \\
+sƿa sƿa hit geƿunelic is þam ðe on ƿuda gað oft · \\
+Hƿ\ae{}r eart þu nu gefera? ⁊ him andƿyrde þ\ae{}t heafod · \\
+H\'er · h\'er · h\'er · ⁊ sƿa gelome clypode \\
+andsƿarigende him eallum · sƿa oft sƿa heora \ae{}nig clypode · \\
+oþþ\ae{}t hi ealle becomen þurh ða clypunga him to · \\
+Þa l\ae{}g se gr\ae{}ga ƿulf þe beƿiste þ\ae{}t heafod · \\
+⁊ mid his tƿam fotum h\ae{}fde þ\ae{}t heafod beclypped · \\
+gr\ae{}dig · ⁊ hungrig · ⁊ for gode ne dorste \\
+þ\ae{}s heafdes abyrian · [ac] heold hit ƿið deor · \\
+Þa ƿurdon hi ofƿundrode þ\ae{}s ƿulfes hyrd-r\ae{}denne · \\
+⁊ þ\ae{}t halige heafod ham feredon mid him · \\
+þancigende þam \ae{}lmihtigan ealra his ƿundra · \\
+ac se ƿulf folgode forð mid þam heafde · \\
+oþþ\ae{}t h\'i to tune comon · sƿylce he tan ƿ\ae{}re · \\
+⁊ geƿende eft siþþan to ƿuda ongean · \\
+Þa land-leoda þa siþþan ledon þ\ae{}t heafod \\
+to þam halgan bodige · ⁊ bebyrigdon hine \\
+sƿa sƿa h\'i selost mihton on sƿylcere hr\ae{}dinge \\
+⁊ cyrcan ar\ae{}rdan sona him onuppon · \\
+Eft þa on fyrste \ae{}fter fela gearum · \\
+þa seo hergung gesƿ\'ac ⁊ sibb ƿearð forgifen \\
+}
+\end{center}
+
+
+\settowidth\pagelen{``Where art thou now, comrade?'' And the head answered them,}
+
+\begin{center}
+\parbox{\pagelen}{
+to where their lord's body lay without the head, \\ 
+and were very sore at heart because of his murder, \\
+and chiefly because they had not the head with the body. \\
+Then said the spectator who previously beheld it \\
+that the seamen had taken the head with them, \\
+and it seemed to him, even as it was quite true, \\
+that they had hidden the head in the wood somewhere about. \\
+Then they all went seeking at last in the wood, \\
+seeking everywhere among the thorns and brambles \\
+if they might anywhere find the head. \\
+There was eke a great wonder, that a wolf was sent, \\
+by God's direction, to guard the head \\
+against the other animals by day and night. \\
+They went on seeking and always crying out, \\
+as is often the wont of those who go through woods; \\
+``Where art thou now, comrade?'' And the head answered them, \\
+``Here, here, here.'' And so it cried out continually, \\
+answering them all, as oft as any of them cried,  \\
+until they all came to it by means of those cries. \\
+There lay the gray wolf who guarded the head, \\
+and with his two feet had embraced the head, \\
+greedy and hungry, and for God's care durst no \\
+taste the head, but kept it against (other) animals. \\
+Then they were astonished at the wolf's guardianship, \\
+and carried the holy head home with them, \\
+thanking the Almighty for all His wonders; \\
+but the wolf followed forth with the head \\
+until they came to the town, as if he were tame, \\
+and then turned back again unto the wood. \\
+Then the country-people afterward laid the head \\
+by the holy body, and buried him \\
+as they best might in such haste, \\
+and full soon built a church over him. \\
+Then again, after a space, after many years, \\
+when the harrying had ceased, and peace was restored \\
+}
+\end{center}
+
+\settowidth\pagelen{þone halgan lichaman · ⁊ l\ae{}cgan innan þ\ae{}re cyrcan ·}
+
+\begin{center}
+\parbox{\pagelen}{
+þam gesƿenctan folce · þa fengon h\'i tog\ae{}dere \\
+⁊ ƿorhton ane cyrcan ƿurðice þam halgan · \\
+for-þan-ðe gelome ƿundra ƿurdon \ae{}t his byrgene \\
+\ae{}t þam geb\ae{}d-huse þ\ae{}r he bebyrged ƿ\ae{}s · \\
+Hi ƿoldon þa ferian mid folclicum ƿurðmynte \\
+þone halgan lichaman · ⁊ l\ae{}cgan innan þ\ae{}re cyrcan · \\
+þa ƿ\ae{}s micel ƿundor þ\ae{}t he ƿ\ae{}s eall sƿa gehal \\
+sƿylce he cucu ƿ\ae{}re mid cl\ae{}num lichaman · \\
+⁊ his sƿura ƿ\ae{}s gehalod þe \ae{}r ƿ\ae{}s forslagen · \\
+⁊ ƿ\ae{}s sƿylce an seolcen þr\ae{}d embe his sƿuran r\'\ae{}d \\
+mannum to sƿeotelunge hu he ofslagen ƿ\ae{}s · \\
+Eac sƿilce þa ƿunda þe þa ƿ\ae{}lhreoƿan h\ae{}þenan \\
+mid gelomum scotungum on his lice macodon · \\
+ƿ\ae{}ron geh\ae{}lede þurh þone heofonlican god · \\
+⁊ he liþ sƿa ansund oþ þisne and-ƿerdan d\ae{}g · \\
+and-bidigende \ae{}ristes · ⁊ þ\ae{}s ecan ƿuldres · \\
+His lichama us cyð þe lið un-formolsnod \\
+þ\ae{}t he butan forligre her on ƿorulde leofode · \\
+⁊ mid cl\ae{}num life to criste siþode · \\
+Sum ƿudeƿe ƿunode osƿyn gehaten \\
+\ae{}t þ\ae{}s halgan byrgene on gebedum \\
+⁊ f\ae{}stenum manega gear syððan · \\
+seo ƿolde efsian \ae{}lce geare þone sanct · \\
+⁊ his n\ae{}glas ceorfan syferlice · mid lufe · \\
+⁊ on scryne healdan to halig-dome on ƿeofode · \\
+Þa ƿurðode þ\ae{}t land-folc mid geleafan þone sanct · \\ 
+⁊ þeodr\'ed bisceop þearle mid gifum \\
+on golde ⁊ on seolfre · þam sancte to ƿurðmynte · \\
+Þa comon on sumne s\ae{}l unge-s\ae{}lige þeofas \\
+eahta on anre nihte to þam arƿurðan halgan \\
+ƿoldon stelan þa maðmas þe men þyder brohton · \\
+⁊ cunnodon mid cr\ae{}fte hu hi in cumon (\emph{sic}) mihton · \\
+Sum sloh mid slecge sƿiðe þa h\ae{}psan · \\
+sum heora mid feolan feolode abutan · \\
+sum eac underdealf þa duru mid spade · \\
+}
+\end{center}
+
+\settowidth\pagelen{desiring to steal the treasures which people had brought thither,}
+
+\begin{center}
+\parbox{\pagelen}{
+to the oppressed people, then they came together, \\
+and built a church worthily to the saint, \\
+because that frequently miracles were done at his burial-place, \\
+even at the bede-house where he was buried. \\
+Then desired they to carry the holy body \\
+with popular honour, and to lay it within the church. \\
+Then there was a great wonder, that he was all as whole \\
+as if he were alive, with clean body, \\
+and his neck was healed which before was cut through, \\
+and there was as it were a silken thread about his neck, all red, \\
+as if to show men how he was slain. \\
+Also the wounds, which the bloodthirsty heathen \\
+had made in his body by their repeated shots, \\
+were healed by the heavenly God; \\
+and so he lieth uncorrupt until this present day, \\
+awaiting the resurrection and the eternal glory. \\
+His body showeth us, which lieth undecayed, \\
+that he lived without fornication here in this world, \\
+and by a pure life passed to Christ. \\
+A certain widow who was called Oswyn \\
+dwelt near the saint's burial-place in prayers \\
+and fastings for many years after. \\
+She would every year cut the hair of the saint, \\
+and cut his nails soberly and lovingly, \\
+and keep them in a shrine as relics on the altar. \\
+So the people of the land faithfully venerated the saint; \\
+and bishop Theodred exceedingly [enriched the church] \\
+with gifts in gold and silver, in the saint's honour. \\
+Then once upon a time came some unblessed thieves, \\
+eight in one night, to the venerable saint, \\
+desiring to steal the treasures which people had brought thither, \\
+and tried how they might get in by craft. \\
+One struck at the hasp violently with a hammer; \\
+one of them filed about it with a file; \\
+one dug under the door with a spade; \\
+}
+\end{center}
+
+
+\settowidth\pagelen{behreoƿsode mid geomerunge · þ\ae{}t he sƿa reðne d\'om sette}
+
+\begin{center}
+\parbox{\pagelen}{
+sum heora mid hl\ae{}ddre ƿolde unlucan þ\ae{}t \ae{}gðyrl · \\
+Ac hi sƿuncon on idel · ⁊ earmlice ferdon · \\
+sƿa þ\ae{}t se halga ƿer h\'i ƿundorlice geband · \\
+\ae{}lcne sƿa he stod strutigende mid tole · \\
+þ\ae{}t heora nan ne mihte þ\ae{}t morð gefremman · \\
+ne hi þanon astyrian · ac stodon sƿa oð mergen · \\
+Men þa þ\ae{}s ƿundrodon hu þa ƿeargas hangodon · \\
+sum on hl\ae{}ddre · sum leat to gedelfe · \\
+⁊ \ae{}lc on his ƿeorce ƿ\ae{}s f\ae{}ste gebunden · \\
+Hi ƿurdon þa ge-brohte to þam bisceope ealle · \\
+⁊ he het h\'i h\'on on heagum gealgum ealle · \\
+Ac he n\ae{}s na gemyndig hu se mild-heorta god \\
+clypode þurh his ƿitegan þas ƿord þe h\'er standað · \\
+Eos qui ducuntur ad mortem eruere ne cesses · \\
+Þa þe man l\ae{}t to deaðe alys h\'i ut symble · \\
+⁊ eac þa halgan canones gehadodum forbeodað \\
+ge bisceopum ge preostum · to beonne embe þeofas · \\
+for-þan-þe hit ne gebyraþ þam þe beoð gecorene \\
+gode to þegnigenne þ\ae{}t hi geþƿ\ae{}rl\ae{}can sceolon · \\
+on \ae{}niges mannes deaðe · gif hi beoð drihtnes þenas · \\
+Eft þa ðeodred bisceop sceaƿode his bec syððan \\
+behreoƿsode mid geomerunge · þ\ae{}t he sƿa reðne d\'om sette \\
+þam unges\ae{}ligum þeofum · ⁊ hit besargode \ae{}fre \\
+oð his lifes ende · ⁊ þa leode b\ae{}d georne · \\
+þ\ae{}t hi him mid f\ae{}stan fullice þry dagas · \\
+biddende þone \ae{}lmihtigan · þ\ae{}t he him arian scolde · \\
+On þam lande ƿ\ae{}s sum man · leofstan gehaten · \\
+rice for ƿorulde · ⁊ unƿittig for gode · \\
+se r\'ad to þam halgan mid riccetere swiðe · \\
+⁊ het him \ae{}t-eowian orhlice swiðe · \\
+þone halgan sanct hƿ\ae{}þer he gesund ƿ\ae{}re · \\
+ac sƿa hraðe sƿa he geseah þ\ae{}s sanctes lichaman · \\
+þa aƿedde he sona · ⁊ ƿ\ae{}l-hreoƿlice grymetede · \\
+⁊ earmlice geendode yfelum deaðe · \\
+Þis is ðam gelic þe se geleaffulla papa \\
+}
+\end{center}
+
+
+\settowidth\pagelen{rued with lamentation that he had awarded such a cruel doom}
+
+\begin{center}
+\parbox{\pagelen}{
+one of them by a ladder wished to unlock the window: \\
+but they toiled in vain, and fared miserably, \\
+because the holy man wondrously bound them, \\
+each as he stood, toiling with his implement, \\
+so that none of them could do that evil deed, \\
+nor stir thence; but they stood there till morning. \\
+Then men wondered to see how the wretches hung there, \\
+one on a ladder, one bent down to his digging, \\
+and each was fast bound in his own work. \\
+Then they were all brought to the bishop, \\
+and he commanded men to hang them all on a high gallows; \\
+but he was not mindful how the merciful God \\
+spake through His prophet the words which here stand; \\
+\emph{``Eos qui ducuntur ad mortem eruere ne cesses'':} \\
+those who are led to death deliver thou alway. \\
+And also the holy canons forbid clerics, \\
+both bishops and priests, to be concerned about thieves, \\
+because it becometh not them that are chosen \\
+to serve God, that they should consent \\
+to any man's death, if they be the Lord's servants. \\
+Then Theodred the bishop, after he had searched his books, \\
+rued with lamentation that he had awarded such a cruel doom \\
+to these unhappy thieves, and ever deplored it \\
+to his life's end; and earnestly prayed the people \\
+to fast with him fully three days, \\
+praying the Almighty that He would have pity upon him. \\
+In that land was a certain man called Leofstan, \\
+rich in worldly things, and ignorant towards God, \\
+who rode with great insolence to the saint's shrine, \\
+and very arrogantly commanded them to show him \\
+the holy saint, (to see) whether he were incorrupt; \\
+but as soon as he saw the saint's body, \\
+then he straightway raved and roared horribly, \\
+and miserably ended by an evil death. \\
+This is like that which the orthodox pope, \\
+} 
+\end{center}
+
+\settowidth\pagelen{for-þan-þe h'i synd aƿyrgede sƿa sƿa h'i ƿiscton him sylfum ·}
+
+\begin{center}
+\parbox{\pagelen}{
+gregorius s\ae{}de on his gesetnysse \\
+be ðam halgan laurentię ðe lið on rome-byrig · \\
+þ\ae{}t menn ƿoldon sceaƿian symle hu he lage · \\
+ge gode ge yfele · ac god hi ge-stilde · \\
+sƿa þ\ae{}t þ\ae{}r sƿulton on þ\ae{}re sceaƿunge ane \\
+seofon menn \ae{}tg\ae{}dere · þa gesƿicon þa oþre \\
+to sceaƿigenne þone martyr mid menniscum gedƿylde · \\
+Fela ƿundra ƿe gehyrdon on folclicre spr\ae{}ce · \\
+be þam halgan eadmunde þe we h\'er nellaþ \\
+on geƿrite settan · \'ac hi ƿ\'at gehƿ\'a · \\
+On þyssum halgan is sƿutel · ⁊ on sƿilcum oþrum · \\
+þ\ae{}t god \ae{}lmihtig m\ae{}g þone man ar\ae{}ran \\
+eft on domes d\ae{}g andsundne of eorþan \\
+se þe hylt eadmunde halne his lichaman · \\
+oð þone micclan d\ae{}g þeah ðe he of moldan come · \\
+Wyrðe is seo stow for þam ƿurðfullan halgan \\
+þ\ae{}t hi man ƿurþige ⁊ ƿel gelogige \\
+mid cl\ae{}num godes þeowum · to cristes þeow-dome · \\
+for-þan-þe se halga is m\ae{}rra þonne men magon asmeagan · \\
+Nis angel-cynn bed\ae{}led drihtnes halgena · \\
+þonne on engla-landa licgaþ sƿilce halgan \\
+sƿylce þ\ae{}s halga cyning is ⁊ cuþberht se eadiga · \\
+⁊ sancte \ae{}þeldryð on elig · ⁊ eac hire sƿustor \\
+ansunde on lichaman geleafan to trymminge · \\
+Synd eac fela oðre on angel-cynne halgan \\
+þe fela ƿundra ƿyrcað · sƿa sƿa hit ƿide is cuð \\
+þam \ae{}lmihtigan to lofe · þe h'i on gelyfdon · \\
+Crist geƿutelaþ mannum þurh his m\ae{}ran halgan \\
+þ\ae{}t he is \ae{}lmihtig god þe macað sƿilce ƿundra \\
+þeah þe þa earman iudei hine eallunge wið-socen · \\
+for-þan-þe h'i synd aƿyrgede sƿa sƿa h'i ƿiscton him sylfum · \\
+Ne beoð nane ƿundra geƿorhte \ae{}t heora byrgenum · \\
+for-ðan-þe h\'i ne gelyfað on þone lifigendan crist · \\
+ac crist gesƿutelað mannum hw\ae{}r se soða geleafa is · \\
+þonne he sƿylce ƿundra ƿyrcð þurh his halgan \\
+}
+\end{center}
+
+\settowidth\pagelen{again, in the day of judgement, incorruptible from the earth,}
+
+\begin{center}
+\parbox{\pagelen}{
+Gregory by name, said in his writing \\
+concerning the holy Lawrence who lieth in the city of Rome, \\
+that men were always wishing to see how he lay, \\
+both good and evil, but God checked them, \\
+so that there died in the looking all at once \\
+seven men together; so the others desisted \\
+from looking at the martyr with human error. \\
+We have heard of many wonders in the popular talk \\
+about the holy Edmund which we will not here \\
+set down in writing; but every one knoweth them. \\
+By this saint is it manifest and by others like him, \\
+that Almighty God can raise man \\
+again, in the day of judgement, incorruptible from the earth, \\
+He who preserveth Edmund whole in his body \\
+until the great day, though he was made of earth. \\
+Worthy is the place for the sake of the venerable saint \\
+that men should venerate it, and well provide it \\
+with God's pure servants, to Christ's service, \\
+because the saint is greater than men may imagine. \\
+The English nation is not deprived of the Lord's saints, \\
+since in English land lie such saints \\
+as this holy king, and the blessed Cuthbert, \\
+and saint \AE{}thelthryth in Ely, and also her sister, \\
+incorrupt in body, for the confirmation of the faith. \\
+There are also many other saints among the English, \\
+who work many miracles, as is widely known, \\
+to the praise of the Almighty in whom they believed. \\
+Christ showeth to men, through His illustrious saints, \\
+that He is Almighty God who causeth such wonders, \\
+though the miserable Jews altogether denied Him, \\
+because they are accursed, as they desired for themselves. \\
+There are no wonders wrought at their sepulchres, \\
+because they believe not in the living Christ; \\
+but Christ manifesteth to men where the true faith is, \\
+since He worketh such miracles by His saints \\
+}
+\end{center}
+
+
+\settowidth\pagelen{\'a mid his heofonlican f\ae{}der · ⁊ þam halgan gaste (a buton ende). \textsc{Amen.}}
+
+\begin{center}
+\parbox{\pagelen}{
+ƿide geond þas eorðan · Þ\ae{}s him sy ƿuldor \\
+\'a mid his heofonlican f\ae{}der · ⁊ þam halgan gaste (a buton ende). \\
+\hspace*{1cm}\textsc{Amen.}
+}
+\end{center}
+
+\clearpage
+
+\settowidth\pagelen{ever with His Heavenly Father, and with the Holy Ghost, for ever and ever.}
+
+\begin{center}
+\parbox{\pagelen}{
+widely throughout the earth; wherefore to Him be Glory\\
+ever with His Heavenly Father, and with the Holy Ghost, for ever and ever. \\
+\hspace*{1cm}\textsc{Amen.}
+}
+\end{center}
+
+
+
+
+
+
+\cleardoublepage
+
+
+\begin{center}
+{\bfseries \lsstyle
+
+\phantom{ }\vfill
+
+{\color{BrickRed} \Large }
+
+\vspace{0.2cm}
+
+{\Huge ST EDMUND }
+
+
+\vfill
+
+}
+
+\end{center}
+
+
+\cleardoublepage
+
+
+\newgeometry{right=4cm}
+\edef\marginnotetextwidth{\the\textwidth}
+
+\setcounter{gloss}{1}
+\setcounter{gloss_text}{1}
+\lettrine[lines=4]{\color{BrickRed}S}{eint Edmund {\fontsize{6.6}{6.6}\selectfont\textbf{Þ}}e holi king: of wham we makie{\fontsize{6.6}{6.6}\selectfont\textbf{Þ}} gret feste}
+\mbox{Of þat on ende of Engelond: kyng he was her bi este} \\
+For of souþfolc he was kyng: \textsc{\&} of þe contray wide \\
+For þer were in Engelond: kynges in eche side \\
+Swiþe fair knyȝt he was \textsc{\&} strong: \textsc{\&} hardie in eche poynte \\
+Meok mylþe\megloss{gloss_text} \textsc{\&} ful of milce:\megloss{gloss_text} \textsc{\&} swiþe curteys \textsc{\&} quoynte \marginnote{{\footnotesize \megloss{gloss}mild}~\hspace{.3cm}{\footnotesize \megloss{gloss}i.e., mercy}}[0cm]
+\\
+Tuei princes of anoþer lond: þat were of liþer\megloss{gloss_text} þoȝt \marginnote{{\footnotesize \megloss{gloss}i.e., wicked}} \\
+Faste here red to-gadere nome:\footnote[\textdagger]{\emph{Faste here red to-gadere nome:} Firm [faste] their [here] decision made [red~.~.~.~nome] together [to-gadere]} to bringe Engelond to noȝt \\
+Hubba was þoþer ihote:\megloss{gloss_text} \textsc{\&} þoþer het\megloss{gloss_text} Hyngar \marginnote{{\footnotesize \megloss{gloss}i.e., named~\hspace{.3cm}\megloss{gloss}id.}} \\
+Wiþ grete furde hi come to Engelonde: er enie man were iwar \\
+In norþhumberland hi bigonne: \textsc{\&} þer hi sloȝe to grounde \\
+Robbede also \textsc{\&} brende\megloss{gloss_text} to noȝt: \textsc{\&} destruyde al þat hi founde \marginnote{{\footnotesize \megloss{gloss}burned}} \\
+\makebox[0pt][r]{\fontspec{Gentium}¶ }Þo hi hadde norþhumberland: clenliche to noȝt ibroȝt \\
+Also hi þoȝte al Engelond: hi ne þoȝte raþer bileue noȝt \\
+Hyngar þat o maister was: his felawe bileuede þere \\
+\textsc{\&} her bi este wende him silf: to sle þat þer were \\
+Of þe godnisse of seint Edmund: he hurde moche telle \\
+In to his lond he wende anon: to fondie him to quelle \\
+\makebox[0pt][r]{\fontspec{Gentium}¶ }In to his hexte\megloss{gloss_text} toun he com: er enie man were iwar \marginnote{{\footnotesize \megloss{gloss}highest}} \\
+\textsc{\&} robbede al þat he fond: \textsc{\&} makede þane toun bar \\
+Þat folc he sloȝ al to grounde: al þat he miȝte ofgon\megloss{gloss_text} \marginnote{{\footnotesize \megloss{gloss}i.e., demand}} \\
+ȝung \textsc{\&} old wyf ne maide: he ne sparede non \\
+Children fram here moder breost: he drouȝ \textsc{\&} let hem quelle \\
+\textsc{\&} alto-drawe tofore here moder: þat reuþe hit is to telle \\
+Þe modres he let siþþe quelle: þat reuþe hit was ynouȝ \\
+Þe toun he brende al to douste: \textsc{\&} þat folc aslouȝ \\
+He of-eschte\megloss{gloss_text} of þat folc: where here kyng were \marginnote{{\footnotesize \megloss{gloss}asked}}\\
+\textsc{\&} hi him teiȝte wher he was: hi ne þerste non oþer for fere \\
+\makebox[0pt][r]{\fontspec{Gentium}¶ }For in þe toun of Eglesdone: a god wei þannes\megloss{gloss_text} hit was \marginnote{{\footnotesize \megloss{gloss}thence}} \\
+Þo þe liþere prince þis ihurde: he ne makede noȝt softe pas \\
+Ac\megloss{gloss_text} wende þider hasteliche: wiþ his men echone \marginnote{{\footnotesize \megloss{gloss}i.e., but}} \\
+Hi come \textsc{\&}{}mette wiþ seint Edmund: wiþoute þe toun alone \\  \setcounter{gloss}{1} \setcounter{gloss_text}{1} 
+\makebox[0pt][r]{\fontspec{Gentium}¶ }Þo Hyngarwiste þat he hit was: he nom\megloss{gloss_text} him anon þere \marginnote{{\footnotesize \megloss{gloss}i.e., captured}\hspace*{0.2cm}}\\
+\textsc{\&} bisigede alle þe men: þat wiþinne þe toun were \\
+Seint Edmund was faste ynome: in a lute stounde\megloss{gloss_text}\marginnote{{\footnotesize \megloss{gloss}\emph{lute stounde:} i.e., little time}} \\
+\textsc{\&} ilad to-fore þe prince naked: his honden faste ibounde \\
+As me ladde oure louerd tofore Pilatus: forto afonge\megloss{gloss_text} his dom\megloss{gloss_text} \marginnote{{\footnotesize \megloss{gloss}i.e., receive}}[-.5\baselineskip] \\
+Þo his dom was iȝyue: faste me him nom \marginnote{{\footnotesize \megloss{gloss}doom, i.e., judgement}}[-.5\baselineskip] \\
+\textsc{\&} ladde him to a þicke wode: \textsc{\&} makede him menie wounde \\
+\textsc{\&} beote him sore wiþ harde scourgen: \textsc{\&} to a treo him bounde \\
+So þat þis liþere tourmentours: þat beote him so sore \\
+Þoȝte þat þeȝ hi him schame dude: þat hi him wolde do more \\
+Hi stode afur \textsc{\&} bende here bowes: \textsc{\&} here arewes riȝte \\
+And as to a merke schote to him: as euene as hi miȝte \\
+Þe arewes stode on him þicke: \textsc{\&} al his bodie to-drowe \\
+\textsc{\&} euere stod þis holi man: stille as þeȝ he lowe \\
+As ful as an illespyl is: of pikes al aboute \\
+As ful he stikede of arewen: wiþ-inne \textsc{\&} wiþoute \\
+So ful þat in none stede: ne miȝte an arewe in wende \\
+For oþer bote he his bodi corue: \textsc{\&} him dude torende \\
+
+
+
+
+\restoregeometry
 
 \end{document}
 
-
-
-
-
-\end{document}
